@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className=" p-4 d-flex justify-content-around text-decoration-none footer text-white">
+        <div className=" p-4 d-flex justify-content-around text-decoration-none footer text-white container-fluid">
             <div>
                 <h3>endource</h3>
                 <p>Vox Studios, 1-45 Durham Street, London SE11 5JH</p>

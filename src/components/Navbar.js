@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = ({onChange,data}) => {
     return (
-        <div>
+        <div className="container-fluid">
             <div className="navb mb-2">
                 <nav className="navbar navbar-expand-lg" style={{backgroundColor: "#e3f2fd"}}>
                     <div className="container-fluid">
