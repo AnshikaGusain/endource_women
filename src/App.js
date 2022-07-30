@@ -7,9 +7,11 @@ import Footer from './components/Footer';
 import Item from "./components/Item";
 import './App.css';
 import Filter from "./components/Filters";
-import Product from "./components/Product";
-
-
+// import Product from "./components/Product";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Home from './pages/Home';
+import ProductList from './pages/ProductList';
+import Product from "./pages/Product";
 const initial = {
   route: "home",
   data: [],
@@ -58,7 +60,7 @@ class App extends Component {
     });
     return (
       <div className="App" id="top">
-        <Navbar onChange={this.onRouteChange} data={this.state}/>
+        {/* <Navbar/>
         {this.state.route === "home" ?
           <div>
             <Slider />
@@ -93,7 +95,15 @@ class App extends Component {
           <a id="button" href="#top" className="btn btn-lg btn-outline-dark fixed-bottom" style={{backgroundColor: "white", width: "50px", height: "50px"}} role="button">
             <i className="fas fa-chevron-up text-dark"></i>
           </a>
-        </div>
+        </div> */}
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="/products/:item" element={<ProductList/>}/>
+            <Route path="/product/:category/:title" element={<Product/>}/>
+          </Routes>
+        </Router>
+        
       </div>
     );
   }
