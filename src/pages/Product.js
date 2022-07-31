@@ -22,10 +22,11 @@ const Product = () => {
             });
             const result = product.json();
             result.then(value => {
+                if(value.category){
+                    let imgs=value.imgs.split(' ');
+                    value.imgs=imgs;
+                }
                 let p = value.price.split('');
-                let imgs=value.imgs.split(' ');
-                // console.log(imgs);
-                value.imgs=imgs;
                 p.shift();
                 let i = 0, pr = [];
                 for (i = 0; i < p.length; i++) {
@@ -41,7 +42,6 @@ const Product = () => {
                 }
                 value.price=pr.join("")
                 setProd(value);
-                
             })
 
         }
