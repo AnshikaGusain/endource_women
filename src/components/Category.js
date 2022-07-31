@@ -30,7 +30,7 @@ class Category extends Component {
                     {this.state.category.map((i, index) => {
                         return <div key={index}>
                             <Link to={`/products/${i.item.toLowerCase()}`}>
-                                <Card title={i.item} img={i.img} key={index} onChange={this.props.onChange}/>
+                                <Card title={i.item} img={i.img} key={index} />
                             </Link>
                         </div>
                     })}

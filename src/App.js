@@ -1,63 +1,24 @@
 import React, { Component } from "react";
-import Navbar from './components/Navbar';
-import Slider from './components/Slider';
-import Category from './components/Category';
-import Handpicked from './components/Handpicked';
-import Footer from './components/Footer';
-import Item from "./components/Item";
-import './App.css';
-import Filter from "./components/Filters";
+// import Navbar from './components/Navbar';
+// import Slider from './components/Slider';
+// import Category from './components/Category';
+// import Handpicked from './components/Handpicked';
+// import Footer from './components/Footer';
+// import Item from "./components/Item";
+// import Filter from "./components/Filters";
 // import Product from "./components/Product";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from './pages/Home';
 import ProductList from './pages/ProductList';
 import Product from "./pages/Product";
-const initial = {
-  route: "home",
-  data: [],
-  brand:[],
-  search:"",
-  product:{},
-  link:""
-}
-
+import Picked from "./pages/Picked";
+import './App.css';
 
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = initial
-  }
-
-  getBrand=(data)=>{
-      this.setState({brand:[...new Set(data.map(item=>item.brand))]});
-  }
-
-  onRouteChange = (r, data) => {
-    this.setState({
-      route: r,
-      data: data
-    })
-    this.getBrand(data)
-  }
-  onSearch=(event)=>{
-    this.setState({
-      search:event.target.value
-    })
-  }
-  onProduct=(product,result)=>{
-    this.setState({
-      route:"product",
-      product:product,
-      link:result
-    })
-  }
-
+  
   render() {
-    const {data,search}=this.state;
-    const filtered=data.filter(item=>{
-      return (item.title.toLowerCase().includes(search.toLowerCase()) || item.brand.toLowerCase().includes(search.toLowerCase()));
-    });
+    
     return (
       <div className="App" id="top">
         {/* <Navbar/>
@@ -101,6 +62,7 @@ class App extends Component {
             <Route exact path="/" element={<Home/>}/>
             <Route path="/products/:item" element={<ProductList/>}/>
             <Route path="/product/:category/:title" element={<Product/>}/>
+            <Route path="/handpicked/:category" element={<Picked/>}/>
           </Routes>
         </Router>
         
