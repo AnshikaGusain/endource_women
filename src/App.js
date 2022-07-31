@@ -21,7 +21,7 @@ class App extends Component {
             <Route path="/products/:item" element={<ProductList/>}/>
             <Route path="/product/:category/:title" element={<Product/>}/>
             <Route path="/handpicked/:category" element={<PickedList/>}/>
-            {/* <Route path="/handpicked/:category/:title" element={<Picked/>}/> */}
+  
           </Routes>
         </Router>
         

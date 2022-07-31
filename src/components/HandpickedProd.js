@@ -13,10 +13,10 @@ const HandpickedProd = ({ prod }) => {
         <div className="product container-fluid">
             <div className="d-flex flex-wrap justify-content-around container">
                 <div className="col-md-4">
-                    <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="true">
+                    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                         <div className="carousel-indicators">
                             {imgs.map?.((item, index) => {
-                                return <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={index} className="active" aria-current="true" aria-label={`Slide ${index + 1}`} key={index}></button>
+                                return <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className="active" aria-current="true" aria-label={`Slide ${index + 1}`} key={index}></button>
                             })}
                         </div>
                         <div className="carousel-inner">
