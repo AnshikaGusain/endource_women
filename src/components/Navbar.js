@@ -19,29 +19,7 @@ const Navbar = ({onChange,data}) => {
                                 <li className="nav-item ">
                                     <a className="nav-link active" aria-current="page" href="/">Women</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://www.endource.com/men">Men</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://www.endource.com/kids">Kids</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://www.endource.com/women/shoes">Shoes</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href=" https://www.endource.com/women/bags">Bags</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href=" https://www.endource.com/women/accessories">Accessories</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href=" https://www.endource.com/sale">Sale</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href=" https://www.endource.com/brands">Brands</a>
-                                </li>
-
-
+                                
                             </ul>
                             <a href="https://www.endource.com/login"><button className="btn btn-outline-info sign">Sign In</button></a>
                         </div>

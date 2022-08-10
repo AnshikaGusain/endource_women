@@ -1,6 +1,15 @@
 import React from "react";
 
-const Slider = () => {
+const Slider = ({onChange}) => {
+    // const fun=(var)=>{
+    //     // fetch(`https://endource-backend.herokuapp.com/data/dresses`,{
+    //     // }).then(res => res.json())
+    //     //     .then(user => {
+    //             onChange(var,);
+    //     //         console.log(user);
+    //     //     });
+    // }
+
     return (
         <div>
             <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -26,8 +35,10 @@ const Slider = () => {
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="18" aria-label="Slide 19"></button>
                 </div>
                 <div className="carousel-inner">
-                     <div className="carousel-item active" data-bs-interval="1000">
-                    <a href="https://www.endource.com/inspiration/post/summershop?click_ref=email&utm_source=Endource+Newsletter&utm_campaign=c108ac5881-20220619_SummerShop&utm_medium=email&utm_term=0_001a2e8cd5-c108ac5881-218386022&ct=t(20220619_SummerShop)">
+                     <div className="carousel-item active" data-bs-interval="1000" onClick={()=>{
+                        onChange("SummerShop")
+                     }}>
+                    <a>
                         <img src="https://images.prismic.io/endource/e80a96f1-87ad-4dbb-8695-35c721dfdad2_NewTemplate_SummerShop_L.jpg?auto=compress,format&rect=0,0,1280,800&w=1200&h=750" className="d-block w-100" alt="..."/>
                     </a>
                     </div>
@@ -38,11 +49,12 @@ const Slider = () => {
                             </div>
                     </a>
                     </div>
-                    <div className="carousel-item" data-bs-interval="3000">
-                    <a href="https://www.endource.com/inspiration/post/arket">
+                    <div className="carousel-item" data-bs-interval="3000" onClick={()=>{
+                        onChange("Arket")
+                    }}>
+                    <a>
                         <img src="https://images.prismic.io/endource/2977f8e2-e75e-44b3-9e88-ba3e69f8ae89_Arket_D.jpg?auto=compress,format&rect=0,0,5334,3334&w=1200&h=750" className="d-block w-100" alt="..."/>
-                            <div className="carousel-caption d-none d-md-block">
-                            </div>
+                            
                     </a>
                     </div>
                     <div className="carousel-item" data-bs-interval="4000">
@@ -59,8 +71,10 @@ const Slider = () => {
                             </div>
                     </a>
                     </div>
-                    <div className="carousel-item" data-bs-interval="6000">
-                    <a href="https://www.endource.com/edit/girl-wonder/Yqh4osnnfAABL6fF">
+                    <div className="carousel-item" data-bs-interval="6000" onClick={()=>{
+                        onChange("Wonder")
+                    }}>
+                    <a>
                         <img src="https://images.prismic.io/endource/d385c6cd-4ceb-413f-a438-a159aedcb76e_06.21_Capsule_L.jpg?auto=compress,format&rect=0,0,1280,800&w=1200&h=750" className="d-block w-100" alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
                             </div>

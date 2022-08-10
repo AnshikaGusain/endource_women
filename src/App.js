@@ -8,6 +8,9 @@ import Item from "./components/Item";
 import './App.css';
 import Filter from "./components/Filters";
 import Product from "./components/Product";
+import SummerShop from "./components/SummerShop";
+import Arket from "./components/Arket";
+import Wonder from "./components/Wonder";
 
 
 const initial = {
@@ -31,7 +34,7 @@ class App extends Component {
       this.setState({brand:[...new Set(data.map(item=>item.brand))]});
   }
 
-  onRouteChange = (r, data) => {
+  onRouteChange = (r, data=[]) => {
     this.setState({
       route: r,
       data: data
@@ -59,9 +62,10 @@ class App extends Component {
     return (
       <div className="App" id="top">
         <Navbar onChange={this.onRouteChange} data={this.state}/>
+        {console.log(this.state.route)}
         {this.state.route === "home" ?
           <div>
-            <Slider />
+            <Slider onChange={this.onRouteChange}/>
             <Category onChange={this.onRouteChange} />
             <Handpicked />
           </div>
@@ -84,9 +88,21 @@ class App extends Component {
           </div>
           :
           <div>
+            {this.state.route === "SummerShop" ?
+              <SummerShop/>
+            :
+            this.state.route === "Arket" ?
+                <Arket/>
+            :
+            this.state.route === "Wonder" ?
+                <Wonder/>
+            :
+          <div>
             <Product prod={this.state.product} link={this.state.link}/>
           </div>
-          }
+  }
+  </div>
+  }
           </div>}
         <Footer />
         <div className="backtop">
