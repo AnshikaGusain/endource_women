@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filter = ({brands,search,data}) =>{
+const Filter = ({brand,search}) =>{
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
@@ -14,7 +14,7 @@ const Filter = ({brands,search,data}) =>{
                             <li className="nav-item m-2">
                                 <div><label htmlFor="brand">Brand</label></div>
                                 <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="brand" onChange={search}>
-                                    {brands.map(item=><option value={item} key={item}>{item}</option>
+                                    {brand.map(item=><option value={item} key={item}>{item}</option>
                                     )}
                                 </select>
                             </li>                           
@@ -22,9 +22,6 @@ const Filter = ({brands,search,data}) =>{
                         <div className="m-2 p-2">
                             <div ><label htmlFor="brand">Search Items</label></div>
                             <div><input type="search" placeholder="Search" aria-label="Search" onChange={search} /></div>
-                        </div>  
-                        <div className="m-2 p-2">
-                        <a href="/"><button className="btn btn-outline-info">Back</button></a>  
                         </div>          
                     </div>
                 </div>

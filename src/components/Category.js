@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "./Card";
+import {Link} from "react-router-dom";
 
 class Category extends Component {
     constructor(){
@@ -28,7 +29,9 @@ class Category extends Component {
                 <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
                     {this.state.category.map((i, index) => {
                         return <div key={index}>
-                            <Card title={i.item} img={i.img} key={index} onChange={this.props.onChange}/>
+                            <Link to={`/products/${i.item.toLowerCase()}`}>
+                                <Card title={i.item} img={i.img} key={index} />
+                            </Link>
                         </div>
                     })}
                 </div>

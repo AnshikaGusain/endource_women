@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import { Link } from "react-router-dom";
 import Card from "./Card";
 
 const data=[
@@ -19,18 +20,7 @@ const data=[
         title:"Colourful Dresses",
         img:"https://cdn.endource.com/image/s3-af3c1f5b78a2453f4c263de33fc4c733/feed-p/sandro-tie-dye-midi-dress.jpg",
         url:"https://www.endource.com/edit/handpicked-colourful-dresses/YoMx4MnnfAABD7k8"
-    },
-    {
-        title:"Swimwear",
-        img:"https://cdn.endource.com/image/s3-4bc3c79f-f50d-4d66-a5ad-d06f22b7cc86/detail/default.jpg",
-        url:"https://www.endource.com/edit/handpicked-swimwear/YpTAq8nnfAABLn-f?splash=true&splashVarient=custom&splashTarget=handpicked-swimwear"
-    },
-    {
-        title:"Puff Sleeves Dresses",
-        img:"https://cdn.endource.com/image/s3-b57e3876-d32f-475d-9bef-be78b923554c/detail/default.jpg",
-        url:"https://www.endource.com/edit/handpicked-puff-sleeve-dresses/YkGy4kbg-wABFBCZ?splash=true&splashVarient=custom&splashTarget=handpicked-puff-sleeve-dresses"
-    },
-
+    }
 ]
 
 class Handpicked extends Component {
@@ -48,7 +38,9 @@ class Handpicked extends Component {
                 <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
                     {this.state.handpick.map((i, index) => {
                         return <div key={index}>
-                            <Card title={i.title} img={i.img} url={i.url} index={index} key={index}/>
+                            <Link to={`/handpicked/${i.title}`}>
+                            <Card title={i.title} img={i.img} key={index}/>
+                            </Link>
                         </div>
                     })}
                 </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 import Navbar from './components/Navbar';
 import Slider from './components/Slider';
 import Category from './components/Category';
@@ -21,10 +22,19 @@ const initial = {
   product:{},
   link:""
 }
+=======
+>>>>>>> fe6dbf40c25dbb33ca64a63fe523abd2d7f04d84
 
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Home from './pages/Home';
+import ProductList from './pages/ProductList';
+import Product from "./pages/Product";
+import PickedList from "./pages/PickedList";
+import './App.css';
 
 
 class App extends Component {
+<<<<<<< HEAD
   constructor() {
     super();
     this.state = initial
@@ -54,13 +64,14 @@ class App extends Component {
     })
   }
 
+=======
+  
+>>>>>>> fe6dbf40c25dbb33ca64a63fe523abd2d7f04d84
   render() {
-    const {data,search}=this.state;
-    const filtered=data.filter(item=>{
-      return (item.title.toLowerCase().includes(search.toLowerCase()) || item.brand.toLowerCase().includes(search.toLowerCase()));
-    });
+    
     return (
       <div className="App" id="top">
+<<<<<<< HEAD
         <Navbar onChange={this.onRouteChange} data={this.state}/>
         {console.log(this.state.route)}
         {this.state.route === "home" ?
@@ -110,6 +121,19 @@ class App extends Component {
             <i className="fas fa-chevron-up text-dark"></i>
           </a>
         </div>
+=======
+        
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="/products/:item" element={<ProductList/>}/>
+            <Route path="/product/:category/:title" element={<Product/>}/>
+            <Route path="/handpicked/:category" element={<PickedList/>}/>
+  
+          </Routes>
+        </Router>
+        
+>>>>>>> fe6dbf40c25dbb33ca64a63fe523abd2d7f04d84
       </div>
     );
   }

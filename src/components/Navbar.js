@@ -2,11 +2,11 @@ import React  from "react";
 import logo from "../assets/logo.png";
 
 
-const Navbar = ({onChange,data}) => {
+const Navbar = () => {
     return (
-        <div className="container-fluid">
-            <div className="navb mb-2">
-                <nav className="navbar navbar-expand-lg" style={{backgroundColor: "#e3f2fd"}}>
+        <div className="container-fluid" style={{backgroundColor: "#e3f2fd"}}>
+            <div className="navb container-fluid">
+                <nav className="navbar navbar-expand-lg" >
                     <div className="container-fluid">
                         <a className="navbar-brand" href="index.html"><img id="company" src={logo}
                             alt="endource" /></a>
@@ -17,11 +17,13 @@ const Navbar = ({onChange,data}) => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item ">
-                                    <a className="nav-link active" aria-current="page" href="/">Women</a>
+                                    <a className="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
+<<<<<<< HEAD
                                 
+=======
+>>>>>>> fe6dbf40c25dbb33ca64a63fe523abd2d7f04d84
                             </ul>
-                            <a href="https://www.endource.com/login"><button className="btn btn-outline-info sign">Sign In</button></a>
                         </div>
                     </div>
                 </nav>
