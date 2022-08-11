@@ -1,25 +1,32 @@
+:root{
+  --navbar-bg-color:black;
+  --navbar-text-color:white;
+  --button-bg-color:black;
+  --button-text-color:white;
+  --category-bg-color:rgb(33,37,41);
+  --text-color:#fff;
+  --handpicked-bg-color:rgb(33,37,41);
+  --product-bg-color:rgb(64, 181, 179), rgb(60, 69, 88);
+
+}
+
 body{
   overflow-x:hidden;
 }
 .App {
   text-align: center;
 }
-
-a,a:hover{
-  color:white;
-  text-decoration: none;
+.navbar{
+  background-color: var(--navbar-bg-color);
+  font-size: 1.5em;
 }
-
-.card-link,.card-link:hover{
-  color:blue;
+.navtext{
+  color: var(--navbar-text-color);
 }
-
-
-.product{
-  background: linear-gradient(to right, rgb(64, 181, 179), rgb(60, 69, 88));
-  /* margin:10px; */
-  padding:20px;
-  color:white
+.navtext:hover{
+  color: var(--navbar-text-color);
+  opacity:85%;
+  text-decoration: underline;
 }
 
 .btn:hover{
@@ -29,7 +36,52 @@ a,a:hover{
 .sign:hover{
   color:white;
 }
-.footer{
-  background-color: rgb(168, 206, 233);
+.button{
+  background-color: var(--button-bg-color);
+}
+.button h5{
+  color: var(--button-text-color);
+}
+.button:hover{
+  background-color: var(--button-bg-color);
+  opacity:85%;
+}
+.button h5:hover{
+  color: var(--button-text-color);
+}
+
+a,a:hover{
+  /* color:white; */
+  text-decoration: none;
+}  
+
+/* .card-link,.card-link:hover{
+  color:blue;
+}   */
+
+.category{
+  background-color: var(--category-bg-color);
+  color:var(--text-color);
+  text-decoration:underline;
+}
+
+.handpicked{
+  background-color: var(--handpicked-bg-color);
+  color:var(--text-color);
+  text-decoration:underline;
+}
+
+
+
+.product{
+  background: linear-gradient(to right, var(--product-bg-color));
+  /* margin:10px; */
+  padding:20px;
+  color:var(--tex)
+}
+
+.footer, .footer a{
+  background-color: var(--navbar-bg-color);
+  color:var(--navbar-text-color);
   font-size: 1.5em;
 }

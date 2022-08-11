@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Home from './pages/Home';
+import Women from './pages/Women';
 import ProductList from './pages/ProductList';
 import Product from "./pages/Product";
 import PickedList from "./pages/PickedList";
@@ -17,11 +17,11 @@ class App extends Component {
         
         <Router>
           <Routes>
-            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/" element={<Women/>}/>
             <Route path="/products/:item" element={<ProductList/>}/>
             <Route path="/product/:category/:title" element={<Product/>}/>
             <Route path="/handpicked/:category" element={<PickedList/>}/>
-  
+            <Route path="/home/:category" element={<PickedList/>}/>
           </Routes>
         </Router>
         

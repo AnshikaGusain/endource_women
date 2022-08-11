@@ -1,16 +1,10 @@
-import Category from "../components/Category"
-import Footer from "../components/Footer"
-import Handpicked from "../components/Handpicked"
-import Navbar from "../components/Navbar"
-import Slider from "../components/Slider"
+import Navbar from "../components/Navbar";
 
 const Home=()=>{
-    return(
+    return (
         <div>
             <Navbar/>
-            <Slider/>
             <Category/>
-            <Handpicked/>
             <Footer/>
         </div>
     )

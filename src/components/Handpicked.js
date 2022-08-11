@@ -33,8 +33,8 @@ class Handpicked extends Component {
     render() {
     return(
         <div>
-             <div className="m-4 p-4 bg-dark">
-                <div><h4 className="text-white text-decoration-underline">Handpicked Collection</h4></div>
+             <div className="mt-2 mb-2 p-4 handpicked">
+                <div><h4>Handpicked Collection</h4></div>
                 <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
                     {this.state.handpick.map((i, index) => {
                         return <div key={index}>
