@@ -5,10 +5,10 @@ import Women from './pages/Women';
 import ProductList from './pages/ProductList';
 import Product from "./pages/Product";
 import PickedList from "./pages/PickedList";
-import './App.css';
 import SummerShop from "./components/SummerShop"
 import Arket from "./components/Arket"
 import Wonder from "./components/Wonder";
+import './App.css';
 
 
 
