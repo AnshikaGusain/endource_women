@@ -6,6 +6,7 @@ const Kids=()=>{
     return(
         <div>
             <Navbar/>
+            <Category type="kids"/>
             <Footer/>
         </div>
     )

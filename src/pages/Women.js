@@ -9,7 +9,7 @@ const Women=()=>{
         <div>
             <Navbar/>
             <Slider/>
-            <Category/>
+            <Category type="women"/>
             <Handpicked/>
             <Footer/>
         </div>

@@ -4,7 +4,7 @@ const Home=()=>{
     return (
         <div>
             <Navbar/>
-            <Category/>
+            <Category type="home"/>
             <Footer/>
         </div>
     )
