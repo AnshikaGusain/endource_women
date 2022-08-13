@@ -3,9 +3,10 @@
   --navbar-text-color:white;
   --button-bg-color:black;
   --button-text-color:white;
-  --category-bg-color:rgb(33,37,41);
-  --text-color:#fff;
-  --handpicked-bg-color:rgb(33,37,41);
+  /* --category-bg-color:rgb(33,37,41); */
+  --category-bg-color:white;
+  --text-color:black;
+  --handpicked-bg-color:white;
   --product-bg-color:rgb(64, 181, 179), rgb(60, 69, 88);
 
 }
@@ -64,6 +65,7 @@ a,a:hover{
   color:var(--text-color);
   text-decoration:underline;
 }
+
 
 .handpicked{
   background-color: var(--handpicked-bg-color);

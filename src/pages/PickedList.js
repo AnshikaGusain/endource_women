@@ -43,7 +43,7 @@ const PickedList=()=>{
             <Filter brand={brand} search={onSearch}/>
             <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
             {filtered.map((item,index)=>{
-                return <Item img={item.img} title={item.title} brand={item.brand} brandLink={item.brandLink} desc={item.desc} price={item.price} titleLink={item.titleLink} key={index} category="handpicked"/>
+                return <Item s_no={item.s_no} img={item.img} title={item.title} brand={item.brand} brandLink={item.brandLink} desc={item.desc} price={item.price} titleLink={item.titleLink} key={index} category="handpicked"/>
             })}
             </div>
             <Footer/>

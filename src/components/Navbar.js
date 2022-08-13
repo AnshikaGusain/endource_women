@@ -1,4 +1,5 @@
-import React  from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 // import Icon from "../assets/logo.jsx";
 
 
@@ -14,13 +15,13 @@ const Navbar = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item ">
-                                    <a className="nav-link navtext" aria-current="page" href="/">Women</a>
+                                    <Link to="/"><span className="nav-link navtext" aria-current="page">Women</span></Link>
                                 </li>
                                 <li className="nav-item ">
-                                    <a className="nav-link navtext" aria-current="page" href="/">Kids</a>
+                                    <Link to="/Kids"><span className="nav-link navtext" aria-current="page">Kids</span></Link>
                                 </li>
                                 <li className="nav-item ">
-                                    <a className="nav-link navtext" aria-current="page" href="/">Home</a>
+                                    <Link to="/Home"><span className="nav-link navtext" aria-current="page">Home</span></Link>
                                 </li>
                             </ul>
                         </div>

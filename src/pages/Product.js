@@ -9,14 +9,16 @@ const Product = () => {
     const [prod, setProd] = useState({});
     const location = useLocation();
     const category = location.pathname.split("/")[2].toString().replaceAll("%20", " ");
-    const title = location.pathname.split("/")[3].toString().replaceAll("%20", " ");
+    const s_no = location.pathname.split("/")[3].toString().replaceAll("%20", " ");
+    console.log(category);
+    console.log(s_no);
     useEffect(() => {
         const getProduct = async () => {
             const product = await fetch("https://endource-backend.herokuapp.com/link", {
                 method: 'Post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    title: title,
+                    s_no: s_no,
                     category: category
                 })
             });
@@ -26,32 +28,17 @@ const Product = () => {
                     let imgs=value.imgs.split(' ');
                     value.imgs=imgs;
                 }
-                let p = value.price.split('');
-                p.shift();
-                let i = 0, pr = [];
-                for (i = 0; i < p.length; i++) {
-                    if (p[i] === " ") {
-                        break;
-                    }
-                    else if (p[i] === ',') {
-                        continue;
-                    }
-                    else {
-                        pr[i] = p[i]
-                    }
-                }
-                value.price=pr.join("")
+
                 setProd(value);
             })
 
         }
         getProduct();
-    }, [title, category])
+    }, [s_no, category])
     return (
         <div>
             <Navbar />
             {category === "handpicked" ? <HandpickedProd prod={prod} imgs={prod.imgs} /> : <Prod prod={prod} />}
-
             <Footer />
         </div>
     )
