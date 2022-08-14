@@ -2,7 +2,7 @@ const Prod =({prod})=>{
     return (
         <div className="product container-fluid">
             <div className="d-flex flex-wrap justify-content-around container-fluid">
-                <div className="img bg-light" ><img src={prod.img} className="p-15" alt="Fail to load"/></div>
+                <div className="img bg-light" style={{width:"25rem", height:"30rem"}} ><img src={prod.img} width="100%" height="100%" className="p-15" alt="Fail to load"/></div>
                 <div>
                     <div className="title p-3 m-4 w-100 text-decoration-underline"><h1>{prod.title}</h1></div>
                     <div className="brand p-1 m-2 w-100"><h3>Brand: {prod.brand}</h3></div>

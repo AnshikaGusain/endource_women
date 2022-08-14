@@ -5,7 +5,7 @@ const Item = ({ s_no,img, title, titleLink, brand, brandLink, price, desc, categ
 
     return (
         <div>
-            <div className="card" style={{ width: "18rem",height:"32rem", margin: "10px" }}>
+            <div className="card" style={{ width: "18rem", margin: "10px" }}>
                 <img src={img} style={{padding:"15px" ,width:"18rem",height:"20rem"}} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>

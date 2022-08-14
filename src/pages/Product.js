@@ -10,8 +10,6 @@ const Product = () => {
     const location = useLocation();
     const category = location.pathname.split("/")[2].toString().replaceAll("%20", " ");
     const s_no = location.pathname.split("/")[3].toString().replaceAll("%20", " ");
-    console.log(category);
-    console.log(s_no);
     useEffect(() => {
         const getProduct = async () => {
             const product = await fetch("https://endource-backend.herokuapp.com/link", {
