@@ -1,12 +1,11 @@
 const Footer = () => {
     return (
         <div className=" p-4 d-flex flex-wrap justify-content-around text-decoration-none footer">
-            <div >
-                <h3>endource</h3>
-                <p style={{fontSize:"0.75em"}}>Vox Studios, 1-45 Durham Street, London SE11 5JH</p>
-            </div>
+                <div className="footerLogo">
+                            <img src="https://i.imgur.com/D39K5wu.jpeg" alt="" />
+                        </div>
             <div>
-                <h3>Endource</h3>
+                <h3>icube</h3>
                 <ul style={{listStyle:"none",fontSize:"0.75em"}}>
                     <a href="/"><li>Edits</li></a>
                     <a href="/"><li>Jobs</li></a>
