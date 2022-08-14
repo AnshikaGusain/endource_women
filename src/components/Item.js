@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Item = ({ s_no,img, title, titleLink, brand, brandLink, price, desc, category}) => {
+const Item = ({ s_no,img, title, brand, brandLink, price, desc, category}) => {
 
     return (
         <div>
