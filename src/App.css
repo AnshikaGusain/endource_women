@@ -1,6 +1,6 @@
 :root{
-  --navbar-bg-color:#d7e6be;
-  --navbar-text-color:black;
+  --navbar-bg-color:#151e3d;
+  --navbar-text-color:white;
   --button-bg-color:black;
   --button-text-color:white;
   /* --category-bg-color:rgb(33,37,41); */
@@ -92,9 +92,11 @@ a,a:hover{
   color:var(--navbar-text-color);
   font-size: 1.1em;
   justify-content: center;
+  text-align: center;
 }
 .footerLogo img{
   width: 6rem;
   height:3rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
