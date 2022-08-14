@@ -1,9 +1,12 @@
 import React from "react";
 import ShopCard from "./ShopCard";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function SummerShop() {
   return (
     <>
+    <Navbar/>
       <div className="container">
         <img
           src="https://images.prismic.io/endource/e79e9b09-a003-406d-85a2-f3079e4c73e6_Title.jpg?auto=compress,format"
@@ -200,7 +203,7 @@ export default function SummerShop() {
     </div>
   </div>
 </div>
-
+<Footer/>
     </>
   );
 }
