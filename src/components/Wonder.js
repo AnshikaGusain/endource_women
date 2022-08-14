@@ -1,10 +1,13 @@
 import React from "react";
+import { Navbar } from "react-bootstrap";
+import Footer from "./Footer";
 import WonderCard from "./WonderCard";
 import { data } from "./wonderData";
 
 export default function Wonder() {
   return (
     <div>
+      <Navbar />
       <div className="container my-4" style={{width:"50rem"}}>
       <h1>Girl Wonder</h1>
       <h4 className="text-muted">
@@ -28,6 +31,7 @@ export default function Wonder() {
         })}
         ;
       </div>
+      <Footer/>
     </div>
   );
 }
