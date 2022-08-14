@@ -1,6 +1,6 @@
 :root{
-  --navbar-bg-color:black;
-  --navbar-text-color:white;
+  --navbar-bg-color:#d7e6be;
+  --navbar-text-color:black;
   --button-bg-color:black;
   --button-text-color:white;
   /* --category-bg-color:rgb(33,37,41); */
@@ -16,10 +16,15 @@ body{
 }
 .App {
   text-align: center;
+  font-size: 1.2em;
+}
+.logo img{
+  height: 1.4rem;
+  width: 4rem;
+  margin-right: 0.5rem;
 }
 .navbar{
-  background-color: var(--navbar-bg-color);
-  font-size: 1.5em;
+  background-color: var(--navbar-bg-color) !important;
 }
 .navtext{
   color: var(--navbar-text-color);
@@ -85,5 +90,11 @@ a,a:hover{
 .footer, .footer a{
   background-color: var(--navbar-bg-color);
   color:var(--navbar-text-color);
-  font-size: 1.5em;
+  font-size: 1.1em;
+  justify-content: center;
+}
+.footerLogo img{
+  width: 6rem;
+  height:3rem;
+  margin-top: 4rem;
 }
