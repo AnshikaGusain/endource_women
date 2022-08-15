@@ -29,7 +29,9 @@ export default function Landing() {
       </div>
       <div className="container-fluid d-flex my-2">
         <div className="flexParts ">
-          <img src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" className="img-thumbnail" alt="..." />
+          <Link to="/Women">
+            <img src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" className="img-thumbnail" alt="..." />
+          </Link>
         </div>
         <div className="flexParts ">
           <Link to="/Women">
@@ -59,13 +61,17 @@ export default function Landing() {
           </h2>
         </div>
         <div className="flexParts">
-          <img src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2lkcyUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" className="img-thumbnail" alt="..." />
+          <Link to="/Kids">
+            <img src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2lkcyUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" className="img-thumbnail" alt="..." />
+          </Link>
         </div>
 
       </div>
       <div className="container-fluid d-flex my-2">
         <div className="flexParts">
-          <img src="https://images.unsplash.com/photo-1579656381226-5fc0f0100c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3VzaGlvbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" className="img-thumbnail" alt="..." />
+          <Link to="/Home">
+            <img src="https://images.unsplash.com/photo-1579656381226-5fc0f0100c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3VzaGlvbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" className="img-thumbnail" alt="..." />
+          </Link>
         </div>
         <div className="flexParts ">
           <Link to="/Home">
