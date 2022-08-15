@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 const Category =({type})=> {
     const [category,setCategory]=useState([]);
@@ -24,13 +24,11 @@ const Category =({type})=> {
         return (
             <div className="mt-2 mb-2 p-4 category">
                 <div><h4>Shop By Category</h4></div>
-                <div className="categoryDiv" style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
+                <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
                     {category.map((i, index) => {
-                        return <div key={index}>
-                            <Link to={`/products/${i.title.toLowerCase()}`}>
-                                <Card title={i.title} img={i.img} key={index} />
-                            </Link>
-                        </div>
+                        return  <Card title={i.title} img={i.img} key={index} link="products"/>
+                        
+                    
                     })}
                 </div>
             </div>

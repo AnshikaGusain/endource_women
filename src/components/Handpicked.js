@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Card from "./Card";
 
 const data=[
@@ -37,11 +37,7 @@ class Handpicked extends Component {
                 <div><h4>Handpicked Collection</h4></div>
                 <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
                     {this.state.handpick.map((i, index) => {
-                        return <div key={index}>
-                            <Link to={`/handpicked/${i.title}`}>
-                            <Card title={i.title} img={i.img} key={index}/>
-                            </Link>
-                        </div>
+                        return <Card title={i.title} img={i.img} key={index} link="handpicked"/>
                     })}
                 </div>
             </div>
