@@ -10,8 +10,8 @@ import PickedList from "./pages/PickedList";
 import SummerShop from "./components/SummerShop"
 import Arket from "./components/Arket"
 import Wonder from "./components/Wonder";
-import './App.css';
 import Landing from "./pages/Landing";
+import './App.css';
 
 
 
