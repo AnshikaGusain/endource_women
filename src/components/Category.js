@@ -24,7 +24,8 @@ const Category =({type})=> {
         return (
             <div className="mt-2 mb-2 p-4 category">
                 <div><h4>Shop By Category</h4></div>
-                <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
+                {/* style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }} */}
+                <div className="categoryCard">
                     {category.map((i, index) => {
                         return  <Card title={i.title} img={i.img} key={index} link="products"/>
                         
