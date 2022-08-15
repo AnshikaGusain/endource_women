@@ -11,6 +11,7 @@ import SummerShop from "./components/SummerShop"
 import Arket from "./components/Arket"
 import Wonder from "./components/Wonder";
 import './App.css';
+import Landing from "./pages/Landing";
 
 
 
@@ -23,7 +24,8 @@ class App extends Component {
         
         <Router>
           <Routes>
-            <Route exact path="/" element={<Women/>}/>
+          <Route exact path="/" element={<Landing/>}/>
+            <Route exact path="/Women" element={<Women/>}/>
             <Route exact path="/Kids" element={<Kids/>}/>
             <Route exact path="/Home" element={<Home/>}/>
             <Route path="/products/:item" element={<ProductList/>}/>
