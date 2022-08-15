@@ -76,14 +76,13 @@ a,a:hover{
 }
 
 .categoryTitle{
-  color:black;
+  /* color:black; */
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
   /* color: #767676; */
   letter-spacing: 0.5px;
   text-decoration: none;
-  letter-spacing: 0.5px;
 }
 
 

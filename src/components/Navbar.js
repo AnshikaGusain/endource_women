@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column" >
-                    <div>
+                    <div className="my-2">
                         <Link to='/'>
                             <div className="logo">
                                     <img src="https://i.imgur.com/D39K5wu.jpeg"  alt="" />
