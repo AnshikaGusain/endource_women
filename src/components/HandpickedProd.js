@@ -44,7 +44,7 @@ const HandpickedProd = ({ prod }) => {
                     </div>
                 </div>
             <h2 className="text-decoration-underline m-4">Description</h2>
-            <div className="desc p-3 m-4 w-100 "><h4>{prod.description}</h4></div>
+            <div className="p-1 m-2">{prod.description}</div>
         </div>
     );
 }
