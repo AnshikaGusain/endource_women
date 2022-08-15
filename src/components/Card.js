@@ -9,7 +9,7 @@ const Card = ({ title, img,link}) => {
                 <img src={img} style={{padding:"15px" ,width:"100%",
     maxWidth:"300px",maxHeight:"300px",minHeight:"200px", position:"relative",border:"none" }} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h3 className="categoryTitle">{title}</h3>
+                    <span className="btn btn-outline-dark"><h3 className="categoryTitle">{title}</h3></span>
                 </div>
             </div>
             </Link>

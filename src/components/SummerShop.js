@@ -185,20 +185,20 @@ export default function SummerShop() {
         />
       </div>
 
-      <div class="container my-3">
-  <div class="row">
-    <div class="col">
+      <div className="container my-3">
+  <div className="row">
+    <div className="col">
       <img className="img-fluid" src="https://images.prismic.io/endource/2f15acdf-f7cc-48ec-bd1b-daa7bab5b9aa_TaxonomiesB.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt="Not available"/>
     </div>
-    <div class="col">
+    <div className="col">
       <img className="img-fluid" src="https://images.prismic.io/endource/282c3a8b-a914-41b3-8171-c89e8a164196_Taxonomies_hats.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
+  <div className="row">
+    <div className="col">
     <img className="img-fluid" src="https://images.prismic.io/endource/f809d9a5-984e-455c-aaee-d3d503c1c9b2_TaxonomiesB3.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
     </div>
-    <div class="col">
+    <div className="col">
     <img className="img-fluid" src="https://images.prismic.io/endource/6cd37b39-3a11-4b93-a8fa-de1254589efc_TaxonomiesB4.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
     </div>
   </div>

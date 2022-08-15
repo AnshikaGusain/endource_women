@@ -10,7 +10,7 @@
   --category-bg-color:white;
   --text-color:black;
   --handpicked-bg-color:white;
-  --product-bg-color:rgb(64, 181, 179), rgb(60, 69, 88);
+  --product-bg-color:white;
 
 }
 
@@ -76,14 +76,13 @@ a,a:hover{
 }
 
 .categoryTitle{
-  color:black;
+  /* color:black; */
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
   /* color: #767676; */
   letter-spacing: 0.5px;
   text-decoration: none;
-  letter-spacing: 0.5px;
 }
 
 
@@ -96,10 +95,11 @@ a,a:hover{
 
 
 .product{
-  background: linear-gradient(to right, var(--product-bg-color));
+  /* background: linear-gradient(to right, var(--product-bg-color)); */
   /* margin:10px; */
+  background-color: var(--product-bg-color);
   padding:20px;
-  color:var(--tex)
+  color:var(--text-color);
 }
 
 .footer, .footer a{
