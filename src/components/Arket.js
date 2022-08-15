@@ -15,7 +15,7 @@ return (
         img_src={val.img_src}
         />
     ); 
-    })};
+    })}
     <Footer/>
   </div>
 )

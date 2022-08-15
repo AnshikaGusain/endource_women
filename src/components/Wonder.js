@@ -8,9 +8,9 @@ export default function Wonder() {
   return (
     <div>
       <Navbar />
-      <div className="container my-4" style={{ width: "50rem" }}>
-        <h1>Girl Wonder</h1>
-        <h4 className="text-muted">
+      <div className="container-fluid d-flex flex-wrap my-4" style={{ width: "50%", justifyContent:"center" }}>
+        <h1 className="flexParts">Girl Wonder</h1>
+        <h4 className="text-muted flexParts my-3">
           Relaxed dresses in naive shades, punctuated by romantic details and
           paired with easy footwear: this uplifting capsule takes its cues from
           girlhood and (early) explorations of femininity, balancing childlike
