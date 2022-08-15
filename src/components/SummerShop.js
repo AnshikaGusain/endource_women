@@ -7,15 +7,15 @@ export default function SummerShop() {
   return (
     <>
     <Navbar/>
-      <div className="container">
-        <img
+      <div className="container-fluid d-flex">
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/e79e9b09-a003-406d-85a2-f3079e4c73e6_Title.jpg?auto=compress,format"
           alt="Not available"
         />
       </div>
 
       <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/fe4fb383-8545-4b4d-83a8-1b441deb702d_header2.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -31,13 +31,13 @@ export default function SummerShop() {
       />
 
 <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/2b0c7db4-c21d-4958-9ab5-167976fcdf3b_art_pia_riverola.jpg?auto=compress,format"
           alt="Not available"
         />
       </div>
       <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/e7856752-a747-42ea-bce4-0878b9469a15_Hanpicked_sandals.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -60,12 +60,12 @@ export default function SummerShop() {
         title3="& Other Stories"
       />
       <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/94930389-0e29-4512-9608-4389ad7f45c1_olympus.jpg?auto=compress,format"
           alt="Not available"
         />
       </div>
-      <ShopCard
+      <ShopCard className="img-fluid"
         img1="https://images.prismic.io/endource/c3b42b23-3056-455a-888a-84e39cbf4281_hunzag.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Hunza G"
         img2="https://images.prismic.io/endource/9f89ca3a-0f03-4bd3-95cc-c66ea82fa435_loewe.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
@@ -74,7 +74,7 @@ export default function SummerShop() {
         title3="& Other Stories"
       />
       <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/c448e050-0a59-4efe-9555-76658fe9a05c_dresses.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -89,7 +89,7 @@ export default function SummerShop() {
       />
 
 <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/8a964332-5833-48c6-be1f-a30e03744ec6_shell_jewellery_D.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -104,7 +104,7 @@ export default function SummerShop() {
       />
 
 <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/38d33f97-976a-47b7-82fb-9efbdd76f05e_Woven_bags_D.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -120,13 +120,13 @@ export default function SummerShop() {
       />
 
 <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/d82c64fc-b40b-45cc-bf16-ba13887fd13c_P_B.jpg?auto=compress,format"
           alt="Not available"
         />
       </div>
       <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/c1b0f4cc-f8b1-424e-afae-bbd0efa2d56d_Handpicked_minidresses.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -151,13 +151,13 @@ export default function SummerShop() {
       />
 
 <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/5bf86950-accc-4bee-aa8a-0af8454b58f0_BON2.jpg?auto=compress,format"
           alt="Not available"
         />
       </div>
       <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/48b153c6-032a-4d7c-8fd9-2ef7d8b75ccd_swimwear.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -179,7 +179,7 @@ export default function SummerShop() {
         title3="Mara Hoffman"
       />
       <div className="container">
-        <img
+        <img className="img-fluid"
           src="https://images.prismic.io/endource/8f3454fa-75f6-4ec5-8f5d-1069e6492f93_BON.jpg?auto=compress,format"
           alt="Not available"
         />
@@ -188,18 +188,18 @@ export default function SummerShop() {
       <div class="container my-3">
   <div class="row">
     <div class="col">
-      <img src="https://images.prismic.io/endource/2f15acdf-f7cc-48ec-bd1b-daa7bab5b9aa_TaxonomiesB.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt="Not available"/>
+      <img className="img-fluid" src="https://images.prismic.io/endource/2f15acdf-f7cc-48ec-bd1b-daa7bab5b9aa_TaxonomiesB.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt="Not available"/>
     </div>
     <div class="col">
-      <img src="https://images.prismic.io/endource/282c3a8b-a914-41b3-8171-c89e8a164196_Taxonomies_hats.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
+      <img className="img-fluid" src="https://images.prismic.io/endource/282c3a8b-a914-41b3-8171-c89e8a164196_Taxonomies_hats.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
     </div>
   </div>
   <div class="row">
     <div class="col">
-    <img src="https://images.prismic.io/endource/f809d9a5-984e-455c-aaee-d3d503c1c9b2_TaxonomiesB3.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
+    <img className="img-fluid" src="https://images.prismic.io/endource/f809d9a5-984e-455c-aaee-d3d503c1c9b2_TaxonomiesB3.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
     </div>
     <div class="col">
-    <img src="https://images.prismic.io/endource/6cd37b39-3a11-4b93-a8fa-de1254589efc_TaxonomiesB4.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
+    <img className="img-fluid" src="https://images.prismic.io/endource/6cd37b39-3a11-4b93-a8fa-de1254589efc_TaxonomiesB4.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
     </div>
   </div>
 </div>
