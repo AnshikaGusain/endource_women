@@ -179,3 +179,14 @@ a,a:hover{
   font-size: 15px;
     font-weight: 600;
 }
+
+.categoryCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoryCard img{
+height: 20rem;
+width: 20rem;
+}
