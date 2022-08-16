@@ -37,9 +37,9 @@ const HandpickedProd = ({ prod }) => {
                     </div>
                 </div>
                 <div className="text-center">
-                    <div className="title p-3 m-4 w-100 text-decoration-underline"><h1>{prod.title}</h1></div>
-                    <div className="brand p-1 m-2 w-100 text-center"><h3>Brand: {prod.brand}</h3></div>
-                    <div className="price p-1 m-2 w-100 text-center"><h3>Price: {prod.price}</h3></div>
+                    <div className="title p-1 m-4 text-decoration-underline"><h1>{prod.title}</h1></div>
+                    <div className="brand p-1 m-2 text-center"><h3>Brand: {prod.brand}</h3></div>
+                    <div className="price p-1 m-2 text-center"><h3>Price: {prod.price}</h3></div>
                     <button className="btn btn-outline-dark"><h4>Buy</h4></button>
                     </div>
                 </div>
