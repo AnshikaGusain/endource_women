@@ -8,11 +8,9 @@ export default function Landing() {
     <div>
       <Navbar />
       <div className=" container-fluid my-3">
-        <img
-          src="https://images.unsplash.com/photo-1581952976147-5a2d15560349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-          className="img-fluid"
-          alt="..."
-        />
+        <Link to="/Arket">
+        <img src="https://images.prismic.io/endource/2977f8e2-e75e-44b3-9e88-ba3e69f8ae89_Arket_D.jpg?auto=compress,format&rect=0,0,5334,3334&w=1200&h=750" className="d-block w-100 img-fluid" alt="..."/>
+        </Link>
       </div>
       <div className="cont container-fluid p-3">
         <div className="my-4">
