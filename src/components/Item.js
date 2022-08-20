@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Item = ({ s_no,img, title, brand, brandLink, price, desc, category}) => {
+const Item = ({ s_no,img, title, brand, previousPrice, price, desc, category}) => {
 
     return (
         <div className="col-6 col-sm-4 col-md-3">
@@ -12,7 +12,10 @@ const Item = ({ s_no,img, title, brand, brandLink, price, desc, category}) => {
                     <h4 className="brand text-truncate">{brand}</h4>
                 <Link to={`/product/${category}/${s_no}`}><h3 className="card-title text-truncate">{title}</h3></Link>
                     <hr/>
-                    <h4 className="price">{price}</h4>
+                    <div className="priceDiv">
+                        <span className="price">{price}</span>
+                        <span className="prevPrice text-muted text-decoration-line-through">{previousPrice}</span>
+                    </div>
                 </div>
             </div>
             
