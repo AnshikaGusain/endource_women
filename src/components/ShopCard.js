@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function ShopCard(props) {
@@ -20,7 +21,9 @@ export default function ShopCard(props) {
     </div>
   </div>
   <div className="row">
-  <button type="button" className="btn btn-outline-dark container my-4" style={{width:"10rem", color:"black", borderRadius: "0"}}>SEE  THEM ALL</button>
+  <Link to={`/${props.link}/${props.category.toLowerCase()}`}>
+    <button type="button" className="btn btn-outline-dark container my-4" style={{width:"10rem", color:"black", borderRadius: "0"}} >SEE  THEM ALL</button>
+  </Link>
   </div>
 </div>
 </>
