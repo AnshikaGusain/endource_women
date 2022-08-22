@@ -1,18 +1,17 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import SummerShop from "../components/SummerShop";
+// import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
     <div>
-      <Navbar />
-      <div className=" container-fluid my-3">
+      {/* <Navbar /> */}
+      {/* <div className=" container-fluid my-3">
         <Link to="/Arket">
         <img src="https://images.prismic.io/endource/2977f8e2-e75e-44b3-9e88-ba3e69f8ae89_Arket_D.jpg?auto=compress,format&rect=0,0,5334,3334&w=1200&h=750" className="d-block w-100 img-fluid" alt="..."/>
         </Link>
-      </div>
-      <div className="cont container-fluid p-3">
+      </div> */}
+      {/* <div className="cont container-fluid p-3">
         <div className="my-4">
           <h1>What is icube all about?</h1>
           <h4 className="text-muted my-5">
@@ -82,9 +81,11 @@ export default function Landing() {
             assurance of quality and durability of our products.
           </h2>
         </div>
-      </div>
+      </div> */}
 
-      <Footer />
+      <SummerShop/>
+
+      {/* <Footer /> */}
     </div>
   );
 }

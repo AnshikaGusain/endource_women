@@ -28,6 +28,8 @@ export default function SummerShop() {
         title2="Ninety percent"
         img3="https://images.prismic.io/endource/8d221020-e841-4f54-aff9-70db485aeb9c_3_marant.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title3="Isabel Marant"
+        link="products"
+        category="trousers"
       />
 
 <div className="container">
@@ -50,6 +52,8 @@ export default function SummerShop() {
         title2="Karen Millen"
         img3="https://images.prismic.io/endource/f03af41b-4370-4c45-961b-4addc2ac1695_cos.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
         title3="COS"
+        link="products"
+        category="accessories"
       />
       <ShopCard
         img1="https://images.prismic.io/endource/d6bd7454-5c6d-49e2-b8eb-dd7f821990d7_byfar.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
@@ -58,6 +62,8 @@ export default function SummerShop() {
         title2="Rusell and Bromley"
         img3="https://images.prismic.io/endource/fb46218b-2a31-40dc-9c86-e4138aef6a87_stories.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
         title3="& Other Stories"
+        link="products"
+        category="accessories"
       />
       <div className="container">
         <img className="img-fluid"
@@ -72,6 +78,8 @@ export default function SummerShop() {
         title2="Loewe"
         img3="https://images.prismic.io/endource/912ed0e2-4de5-4799-9b0c-867f68237c6b_others.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
         title3="& Other Stories"
+        link="products"
+        category="Swimwear"
       />
       <div className="container">
         <img className="img-fluid"
@@ -86,6 +94,8 @@ export default function SummerShop() {
         title2="Faithfull The Brand"
         img3="https://images.prismic.io/endource/0510e710-3de9-4772-98b4-b2a1920d50af_product3.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
         title3="Mango"
+        link="products"
+        category="dresses"
       />
 
 <div className="container">
@@ -101,6 +111,8 @@ export default function SummerShop() {
         title2="Mango"
         img3="https://images.prismic.io/endource/c15ba032-b6fa-4444-8dbb-7b398b543d79_marni.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
         title3="Marni"
+        link="products"
+        category="accessories"
       />
 
 <div className="container">
@@ -117,6 +129,8 @@ export default function SummerShop() {
         title2="Staud"
         img3="https://images.prismic.io/endource/ff433f19-589a-463a-a5fd-0f70794caaa9_bag3.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title3="Mango"
+        link="products"
+        category="accessories"
       />
 
 <div className="container">
@@ -132,13 +146,15 @@ export default function SummerShop() {
         />
       </div>
 
-<ShopCard
+      <ShopCard
         img1="https://images.prismic.io/endource/6ca42d0e-fe99-430a-89b1-a05b009baf97_1_Hunza_G.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Hunza G"
         img2="https://images.prismic.io/endource/50305299-6ef9-43c8-a61a-efb283277e53_2_Isa_boulder.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title2="Isa Boulder"
         img3="https://images.prismic.io/endource/9469b547-8a4c-475e-9a6e-2c5c4fcab0d0_3_mango.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title3="Mango"
+        link="handpicked"
+        category="mini dresses"
       />
       
       <ShopCard
@@ -148,6 +164,9 @@ export default function SummerShop() {
         title2="Sandro"
         img3="https://images.prismic.io/endource/a3807a6d-69e9-46a2-b395-49ba0fcb0f0e_6_stories.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title3="& Other Stories"
+        link="handpicked"
+        category="mini dresses"
+
       />
 
 <div className="container">
@@ -169,6 +188,8 @@ export default function SummerShop() {
         title2="Mara Hoffman"
         img3="https://images.prismic.io/endource/6b620526-b893-413f-9737-4ab16a10aa95_swimwear3.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title3="Weekday"
+        category="Swimwear"
+        link="products"
       />
       <ShopCard
         img1="https://images.prismic.io/endource/6ab0dbeb-e69a-456c-9808-d983921624a0_swimwear4.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
@@ -177,6 +198,8 @@ export default function SummerShop() {
         title2="Casa Raki"
         img3="https://images.prismic.io/endource/8c74f086-9227-4871-afbc-ba8c3df40afc_swimwear6.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title3="Mara Hoffman"
+        category="Swimwear"
+        link="products"
       />
       <div className="container">
         <img className="img-fluid"
