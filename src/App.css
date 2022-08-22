@@ -150,6 +150,7 @@ a,a:hover{
 
 .container>.col-6 {
   flex: 0 1 50%;
+
 }
 
 .card{
@@ -189,4 +190,6 @@ a,a:hover{
 .categoryCard img{
 height: 20rem;
 width: 15rem;
+  height: 44vw;
+  /* width: 20rem; */
 }
