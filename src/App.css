@@ -1,12 +1,10 @@
 :root{
-  /* --navbar-bg-color:#151e3d; */
   --navbar-bg-color:white;
   --navbar-text-color:black;
   --footer-bg-color:black;
   --footer-text-color:#767676;
   --button-bg-color:black;
   --button-text-color:white;
-  /* --category-bg-color:rgb(33,37,41); */
   --category-bg-color:white;
   --text-color:black;
   --handpicked-bg-color:white;
@@ -45,29 +43,11 @@ body{
 .sign:hover{
   color:white;
 }
-/* .button{
-  background-color: var(--button-bg-color);
-}
-.button h5{
-  color: var(--button-text-color);
-  font-size: 20px;
-}
-.button:hover{
-  background-color: var(--button-bg-color);
-  opacity:85%;
-}
-.button h5:hover{
-  color: var(--button-text-color);
-} */
+
 
 a,a:hover{
-  /* color:white; */
   text-decoration: none;
-}  
-
-/* .card-link,.card-link:hover{
-  color:blue;
-}   */
+}
 
 .category{
   background-color: var(--category-bg-color);
@@ -76,15 +56,12 @@ a,a:hover{
 }
 
 .categoryTitle{
-  /* color:black; */
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
-  /* color: #767676; */
   letter-spacing: 0.5px;
   text-decoration: none;
 }
-
 
 .handpicked{
   background-color: var(--handpicked-bg-color);
@@ -92,11 +69,7 @@ a,a:hover{
   text-decoration:underline;
 }
 
-
-
 .product{
-  /* background: linear-gradient(to right, var(--product-bg-color)); */
-  /* margin:10px; */
   background-color: var(--product-bg-color);
   padding:20px;
   color:var(--text-color);
@@ -105,13 +78,10 @@ a,a:hover{
 .footer, .footer a{
   background-color: var(--footer-bg-color);
   color:var(--footer-text-color);
-  /* justify-content: center; */
-  /* text-align: center; */
   font-size: 13px;
 }
 .footer,.footer ul{
   text-align: left;
-  /* margin:0; */
   padding:0;
 }
 
@@ -122,11 +92,13 @@ a,a:hover{
 .footerLogo img{
   width: 5rem;
   height:2rem;
-  /* margin-top: 2rem;
-  margin-bottom: 2rem; */
 }
 .footer span{
   color:white;
+}
+
+.footerText:hover{
+  color:var(--footer-text-color);
 }
 /* landing page */
 
@@ -197,5 +169,8 @@ a,a:hover{
 
 .categoryCard img{
   height: 44vw;
-  /* width: 20rem; */
+}
+
+.shopCardButton:hover{
+  color:white;
 }

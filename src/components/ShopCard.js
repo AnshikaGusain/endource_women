@@ -22,7 +22,7 @@ export default function ShopCard(props) {
   </div>
   <div className="row">
   <Link to={`/${props.link}/${props.category.toLowerCase()}`}>
-    <button type="button" className="btn btn-outline-dark container my-4" style={{width:"10rem", color:"black", borderRadius: "0"}} >SEE  THEM ALL</button>
+    <button type="button" className="btn btn-outline-dark container my-4 shopCardButton" style={{width:"10rem",  borderRadius: "0"}} >SEE  THEM ALL</button>
   </Link>
   </div>
 </div>
