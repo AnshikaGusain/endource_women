@@ -9,23 +9,23 @@ const Footer = () => {
       </div>
       <div>
         <span>icube</span>
-        <ul style={{ listStyle: "none"}}>
+        <ul style={{listStyle:"none"}}>
           <a href="/">
-            <li>Terms & Conditions</li>
+            <li className="footerText">Terms & Conditions</li>
           </a>
           <a href="/">
-            <li>Privacy</li>
+            <li className="footerText">Privacy</li>
           </a>
         </ul>
       </div>
       <div >
-        <span>Costumer Service</span>
+        <span className="footerText">Costumer Service</span>
         <ul style={{ listStyle: "none"}}>
           <a href="/">
-            <li>FAQs</li>
+            <li className="footerText">FAQs</li>
           </a>
           <a href="/">
-            <li>Contact Us</li>
+            <li className="footerText">Contact Us</li>
           </a>
         </ul>
       </div>
