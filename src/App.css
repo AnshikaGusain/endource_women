@@ -167,10 +167,14 @@ a,a:hover{
   justify-content: center;
 }
 
-.categoryCard img{
+/* .categoryCard img{
   height: 44vw;
-}
+} */
 
 .shopCardButton:hover{
   color:white;
+}
+
+.ProductPrice span{
+  font-size:1.5rem;
 }

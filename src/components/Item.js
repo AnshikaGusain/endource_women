@@ -14,7 +14,11 @@ const Item = ({ s_no,img, title, brand, previousPrice, price, desc, category}) =
                     <hr/>
                     <div className="priceDiv">
                         <span className="price">{price}</span>
+                        {(previousPrice!==undefined)?
                         <span className="prevPrice text-muted text-decoration-line-through">{previousPrice}</span>
+                        :
+                        <span></span>
+                        }
                     </div>
                 </div>
             </div>

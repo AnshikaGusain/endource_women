@@ -22,11 +22,8 @@ const Product = () => {
             });
             const result = product.json();
             result.then(value => {
-                if(value.category){
-                    let imgs=value.imgs.split(' ');
-                    value.imgs=imgs;
-                }
-
+                let imgs=value.imgs.split(' ');
+                value.imgs=imgs;
                 setProd(value);
             })
 
