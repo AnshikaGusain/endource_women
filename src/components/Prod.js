@@ -1,17 +1,57 @@
-const Prod =({prod})=>{
+import { useEffect, useState } from "react";
+
+const Prod = ({ prod }) => {
+    const [imgs, setImgs] = useState([]);
+    useEffect(() => {
+        if (prod.imgs) {
+            setImgs(prod.imgs);
+        }
+    }, [prod, imgs]);
     return (
         <div className="product container-fluid">
-            <div className="d-flex flex-wrap justify-content-around container-fluid">
-                <div className="img bg-light" style={{width:"25rem", height:"30rem"}} ><img src={prod.img} width="100%" height="100%" className="p-15" alt="Fail to load"/></div>
-                <div className="text-center">
+            <div className="d-flex flex-wrap justify-content-around container">
+                <div className="col-md-4">
+                    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                        <div className="carousel-indicators">
+                            {imgs.map?.((item, index) => {
+                                
+                                    return <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className="active"  aria-label={`Slide ${index + 1}`} key={index}></button>
+                                
+                            })}
+                        </div>
+                        <div className="carousel-inner">
+                            {imgs.map?.((item, index) => {
+                                return <div className="carousel-item active " key={index}>
+                                    <img src={item} className="d-block w-100" alt="Failed to load" />
+                                </div>
+                            })}
+                        </div>
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div className="text-center align-self-center">
                     <div className="title p-1 m-4 text-decoration-underline"><h1>{prod.title}</h1></div>
                     <div className="brand p-1 m-2 text-center"><h3>Brand: {prod.brand}</h3></div>
-                    <div className="price p-1 m-2 text-center"><h3>Price: {prod.price}</h3></div>
-                    <button className="btn btn-outline-dark"><h4>Buy</h4></button>
+                    <div className="ProductPrice">
+                        <span className="price p-1 m-2 text-center" >Price: {prod.price}</span>
+                            {(prod.previousprice !== undefined) ?
+                                <span className="prevPrice text-muted text-decoration-line-through">{prod.previousprice}</span>
+                                :
+                                <span></span>}
+                        
                     </div>
+                    <button className="btn btn-outline-dark my-4"><h4>Buy</h4></button>
+                </div>
             </div>
             <h2 className="text-decoration-underline m-4">Description</h2>
-            <div className="p-1 m-2"><h4>{prod.description}</h4></div>
+            <div className="p-1 m-2">{prod.description}</div>
         </div>
     );
 }

@@ -8,7 +8,7 @@ const Card = ({ title, img,link}) => {
             <div className="card" >
                 <div className="justify-content-center">
                     
-                <img className="img-fluid card-img-top" src={img} style={{padding:"15px" ,width:"100%", maxWidth:"300px",maxHeight:"300px",position:"relative",border:"none" }}  alt="..." />
+                <img className="img-fluid card-img-top" src={img} style={{padding:"15px" ,width:"100%", maxWidth:"300px",maxHeight:"350px",position:"relative",border:"none" }}  alt="..." />
                 </div>
                 <div className="card-body">
                     <span className="btn btn-outline-dark"><h3 className="categoryTitle">{title}</h3></span>
