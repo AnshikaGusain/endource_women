@@ -167,11 +167,9 @@ a,a:hover{
   justify-content: center;
 }
 
-/* .categoryCard img{
-height: 20rem;
-width: 15rem;
+.categoryCard img{
   height: 44vw;
-} */
+}
 
 .shopCardButton:hover{
   color:white;
@@ -179,4 +177,16 @@ width: 15rem;
 
 .ProductPrice span{
   font-size:1.5rem;
+}
+
+.card-img-top{
+  transition: transform .5s ease;
+}
+
+.card-img-top:hover{
+  transform:scale(1.05);
+}
+
+.item_card img{
+  height:44vw;
 }

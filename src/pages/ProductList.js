@@ -33,12 +33,19 @@ const ProductList=()=>{
     return(
         <div>
             <Navbar/>
+            {(data.length===0)
+            ?
+            <div><h1 className="mt-2 mb-2 p-4 fw-bold">Loading...</h1></div>
+            :
+            <div>
             {/* <Filter brand={brand} search={onSearch}/> */}
-            <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
+            <div className="item_card" style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
             {data.map((item,index)=>{
                 return <Item s_no={item.s_no} img={item.img} title={item.title} brand={item.brand} brandLink={item.brandLink} desc={item.desc} price={item.price} titleLink={item.titleLink} key={index} category={category} previousPrice={item.previousprice}/>
             })}
             </div>
+            </div>
+            }
             <Footer/>
         </div>
     )
