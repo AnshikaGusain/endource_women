@@ -8,16 +8,16 @@ export default function ShopCard(props) {
 <div className="container-fluid my-4">
   <div className="row">
     <div className="col-sm">
-      <img className="img-fluid" src={props.img1} alt = "Not available"/>
-      <h5>{props.title1}</h5>
+      <img className="img-fluid m-3" src={props.img1} alt = "Not available"/>
+      <h5 className="text-black">{props.title1}</h5>
     </div>
     <div className="col-sm">
-    <img className="img-fluid" src={props.img2} alt = "Not available"/>
-      <h5>{props.title2}</h5>
+    <img className="img-fluid m-3" src={props.img2} alt = "Not available"/>
+      <h5 className="text-black">{props.title2}</h5>
     </div>
     <div className="col-sm">
-    <img className="img-fluid" src={props.img3} alt = "Not available"/>
-      <h5>{props.title3}</h5>
+    <img className="img-fluid m-3" src={props.img3} alt = "Not available"/>
+      <h5 className="text-black">{props.title3}</h5>
     </div>
   </div>
   <div className="row">

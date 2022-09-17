@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WonderCard(props) {
   return (
-      <div className="card mx-4 my-4" style={{width: "18rem"} }>
+      <div className="card m-4" style={{width: "18rem"} }>
         <img src={props.img} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.brand}</h5>
@@ -10,7 +10,7 @@ export default function WonderCard(props) {
         </div >
         <ul className="list-group list-group-flush">
           <li className="list-group-item">{props.price}</li>
-          <button type="button" className="btn btn-info">Buy Now</button>
+          {/* <button type="button" className="btn btn-info">Buy Now</button> */}
         </ul>        
       </div>
   );

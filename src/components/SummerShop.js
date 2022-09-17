@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ShopCard from "./ShopCard";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -7,32 +8,35 @@ export default function SummerShop() {
   return (
     <>
     <Navbar/>
-      <div className="container-fluid d-flex">
+    <Link to="/Women">
+      <div className="container-fluid d-flex m-3">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/e79e9b09-a003-406d-85a2-f3079e4c73e6_Title.jpg?auto=compress,format"
           alt="Not available"
-        />
+          />
       </div>
 
-      <div className="container">
+      <div className="container m-3">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/fe4fb383-8545-4b4d-83a8-1b441deb702d_header2.jpg?auto=compress,format"
           alt="Not available"
-        />
+          />
       </div>
-
+    </Link>
+      <Link to="/products/trousers">
       <ShopCard
-        img1="https://images.prismic.io/endource/b57ea0cb-d777-4f8c-884f-55c14825f78d_1_acne.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title1="Acne"
+        img1="//cdn.endource.com/image/s3-ab9f25d95fa76a2c17190f4ec1d51388/feed-p/adidas-by-stella-mccartney-logo-print-recycled-polyester-shorts.jpg"
+        title1=""
         img2="https://images.prismic.io/endource/9d5065fc-6d9c-4227-bcd5-4684f9a81d72_2_ninety_percent.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title2="Ninety percent"
-        img3="https://images.prismic.io/endource/8d221020-e841-4f54-aff9-70db485aeb9c_3_marant.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title3="Isabel Marant"
+        img3="//cdn.endource.com/image/s3-d805e1474c1ad70350ee4d5b1cb571bc/feed-p/cos-printed-shorts.jpg"
+        title3=""
         link="products"
         category="trousers"
-      />
+        />
+      </Link>
 
-<div className="container">
+{/* <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/2b0c7db4-c21d-4958-9ab5-167976fcdf3b_art_pia_riverola.jpg?auto=compress,format"
           alt="Not available"
@@ -43,9 +47,9 @@ export default function SummerShop() {
           src="https://images.prismic.io/endource/e7856752-a747-42ea-bce4-0878b9469a15_Hanpicked_sandals.jpg?auto=compress,format"
           alt="Not available"
         />
-      </div>
+      </div> */}
 
-      <ShopCard
+      {/* <ShopCard
         img1="https://images.prismic.io/endource/58ec65ff-4d4e-4449-9f16-cd1a6001a5a5_maje.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Maje"
         img2="https://images.prismic.io/endource/eee562d8-5352-4d7b-a9c9-e621bae76cfc_karen_millen.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
@@ -64,29 +68,36 @@ export default function SummerShop() {
         title3="& Other Stories"
         link="products"
         category="accessories"
-      />
+      /> */}
+      <Link to="/products/dresses">
       <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/94930389-0e29-4512-9608-4389ad7f45c1_olympus.jpg?auto=compress,format"
           alt="Not available"
-        />
+          />
       </div>
+      </Link>
+      <Link to="/products/Swimwear">
       <ShopCard className="img-fluid"
         img1="https://images.prismic.io/endource/c3b42b23-3056-455a-888a-84e39cbf4281_hunzag.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Hunza G"
-        img2="https://images.prismic.io/endource/9f89ca3a-0f03-4bd3-95cc-c66ea82fa435_loewe.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title2="Loewe"
+        img2="//cdn.endource.com/image/s3-ee8f0dbb96cbb95d8e8c9c9a53c0d7dc/feed-p/cos-open-back-printed-swimsuit.jpg"
+        title2=""
         img3="https://images.prismic.io/endource/912ed0e2-4de5-4799-9b0c-867f68237c6b_others.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
         title3="& Other Stories"
         link="products"
         category="Swimwear"
-      />
+        />
+      </Link>
+      <Link to="/products/dresses">
       <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/c448e050-0a59-4efe-9555-76658fe9a05c_dresses.jpg?auto=compress,format"
           alt="Not available"
-        />
+          />
       </div>
+      </Link>
+      <Link to="/products/dresses">
       <ShopCard
         img1="https://images.prismic.io/endource/7b9c043e-7ab5-4041-b5d4-3745e20c620f_product1.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Arket"
@@ -96,9 +107,10 @@ export default function SummerShop() {
         title3="Mango"
         link="products"
         category="dresses"
-      />
+        />
+      </Link>
 
-<div className="container">
+{/* <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/8a964332-5833-48c6-be1f-a30e03744ec6_shell_jewellery_D.jpg?auto=compress,format"
           alt="Not available"
@@ -113,16 +125,16 @@ export default function SummerShop() {
         title3="Marni"
         link="products"
         category="accessories"
-      />
+      /> */}
 
-<div className="container">
+{/* <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/38d33f97-976a-47b7-82fb-9efbdd76f05e_Woven_bags_D.jpg?auto=compress,format"
           alt="Not available"
         />
-      </div>
+      </div> */}
 
-      <ShopCard
+      {/* <ShopCard
         img1="https://images.prismic.io/endource/28fc14a5-3b9e-4912-9f26-4fb79ffda690_bag1.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Arket"
         img2="https://images.prismic.io/endource/fc16b2e1-54dc-415b-a6b4-00169820f8eb_bag2.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
@@ -131,21 +143,23 @@ export default function SummerShop() {
         title3="Mango"
         link="products"
         category="accessories"
-      />
+      /> */}
 
+  <Link to="/handpicked/mini dresses">
 <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/d82c64fc-b40b-45cc-bf16-ba13887fd13c_P_B.jpg?auto=compress,format"
           alt="Not available"
-        />
+          />
       </div>
+  </Link>
       <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/c1b0f4cc-f8b1-424e-afae-bbd0efa2d56d_Handpicked_minidresses.jpg?auto=compress,format"
           alt="Not available"
         />
       </div>
-
+<Link to="/handpicked/mini dresses">
       <ShopCard
         img1="https://images.prismic.io/endource/6ca42d0e-fe99-430a-89b1-a05b009baf97_1_Hunza_G.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Hunza G"
@@ -156,7 +170,8 @@ export default function SummerShop() {
         link="handpicked"
         category="mini dresses"
       />
-      
+  </Link>
+      <Link to="/handpicked/mini dresses">
       <ShopCard
         img1="https://images.prismic.io/endource/b46dcb27-501d-487e-a1d2-692ff94aa37c_4_reformation.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Reformation"
@@ -166,21 +181,23 @@ export default function SummerShop() {
         title3="& Other Stories"
         link="handpicked"
         category="mini dresses"
+        />
+      </Link>
 
-      />
-
-<div className="container">
+{/* <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/5bf86950-accc-4bee-aa8a-0af8454b58f0_BON2.jpg?auto=compress,format"
           alt="Not available"
         />
-      </div>
+      </div> */}
+
       <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/48b153c6-032a-4d7c-8fd9-2ef7d8b75ccd_swimwear.jpg?auto=compress,format"
           alt="Not available"
         />
       </div>
+      <Link to="/products/Swimwear">
       <ShopCard
         img1="https://images.prismic.io/endource/9310b147-30f9-4fea-bebc-f6203c285882_swimwear1.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Skin"
@@ -190,7 +207,9 @@ export default function SummerShop() {
         title3="Weekday"
         category="Swimwear"
         link="products"
-      />
+        />
+      </Link>
+      <Link to="/products/Swimwear">
       <ShopCard
         img1="https://images.prismic.io/endource/6ab0dbeb-e69a-456c-9808-d983921624a0_swimwear4.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Faithfull The Brand"
@@ -200,15 +219,16 @@ export default function SummerShop() {
         title3="Mara Hoffman"
         category="Swimwear"
         link="products"
-      />
-      <div className="container">
+        />
+      </Link>
+      {/* <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/8f3454fa-75f6-4ec5-8f5d-1069e6492f93_BON.jpg?auto=compress,format"
           alt="Not available"
         />
-      </div>
+      </div> */}
 
-      <div className="container my-3">
+      {/* <div className="container my-3">
   <div className="row">
     <div className="col">
       <img className="img-fluid" src="https://images.prismic.io/endource/2f15acdf-f7cc-48ec-bd1b-daa7bab5b9aa_TaxonomiesB.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt="Not available"/>
@@ -225,7 +245,7 @@ export default function SummerShop() {
     <img className="img-fluid" src="https://images.prismic.io/endource/6cd37b39-3a11-4b93-a8fa-de1254589efc_TaxonomiesB4.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
     </div>
   </div>
-</div>
+</div> */}
 <Footer/>
     </>
   );
