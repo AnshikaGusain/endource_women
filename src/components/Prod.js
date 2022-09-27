@@ -15,24 +15,24 @@ const Prod = ({ prod }) => {
                         <div className="carousel-indicators">
                             {imgs.map?.((item, index) => {
                                 
-                                    return <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className="active"  aria-label={`Slide ${index + 1}`} key={index}></button>
+                                    return <button type="button" data-bs-target="#carouselExampleIndicators" style = {{ filter : 'invert(1)' }} data-bs-slide-to={index} className="active"  aria-label={`Slide ${index + 1}`} key={index}></button>
                                 
                             })}
                         </div>
                         <div className="carousel-inner">
                             {imgs.map?.((item, index) => {
-                                return <div className="carousel-item active " key={index}>
+                                return <div className= {`carousel-item ${index === imgs.length -1 ?"active" : ""}`} key={index}>
                                     <img src={item} className="d-block w-100" alt="Failed to load" />
                                 </div>
                             })}
                         </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
+                        <button  className="carousel-control-prev"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" style = {{ filter : 'invert(1)' }} aria-hidden="true"></span>
+                            <span className="visually-hidden" style = {{ filter : 'invert(1)' }}>Previous</span>
                         </button>
                         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
+                            <span className="carousel-control-next-icon" style = {{ filter : 'invert(1)' }} aria-hidden="true"></span>
+                            <span className="visually-hidden" style = {{ filter : 'invert(1)' }}>Next</span>
                         </button>
                     </div>
                 </div>
