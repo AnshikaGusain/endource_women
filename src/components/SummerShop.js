@@ -77,7 +77,7 @@ export default function SummerShop() {
           />
       </div>
       </Link>
-      <Link to="/products/Swimwear">
+      <Link to="/products/swimwear">
       <ShopCard className="img-fluid"
         img1="https://images.prismic.io/endource/c3b42b23-3056-455a-888a-84e39cbf4281_hunzag.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Hunza G"
@@ -197,7 +197,7 @@ export default function SummerShop() {
           alt="Not available"
         />
       </div>
-      <Link to="/products/Swimwear">
+      <Link to="/products/swimwear">
       <ShopCard
         img1="https://images.prismic.io/endource/9310b147-30f9-4fea-bebc-f6203c285882_swimwear1.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Skin"
@@ -209,7 +209,7 @@ export default function SummerShop() {
         link="products"
         />
       </Link>
-      <Link to="/products/Swimwear">
+      <Link to="/products/swimwear">
       <ShopCard
         img1="https://images.prismic.io/endource/6ab0dbeb-e69a-456c-9808-d983921624a0_swimwear4.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
         title1="Faithfull The Brand"
