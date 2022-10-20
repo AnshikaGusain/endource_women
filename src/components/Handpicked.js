@@ -1,6 +1,5 @@
-import React,{Component} from "react";
-// import { Link } from "react-router-dom";
-import Card from "./Card";
+import React,{Component,lazy,Suspense} from "react";
+const Card =lazy(()=>import("./Card"));
 
 const data=[
     {title:"Trousers",
@@ -37,7 +36,9 @@ class Handpicked extends Component {
                 <div><h4>Handpicked Collection</h4></div>
                 <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
                     {this.state.handpick.map((i, index) => {
-                        return <Card title={i.title} img={i.img} key={index} link="handpicked"/>
+                        return <Suspense>
+                            <Card title={i.title} img={i.img} key={index} link="handpicked"/>
+                            </Suspense>
                     })}
                 </div>
             </div>

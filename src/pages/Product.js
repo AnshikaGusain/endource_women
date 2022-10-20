@@ -1,9 +1,9 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import { React,lazy,Suspense,useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
-import Prod from "../components/Prod";
-import HandpickedProd from "../components/HandpickedProd";
+const Footer=lazy(()=>import('../components/Footer'));
+const Navbar=lazy(()=>import('../components/Navbar'));
+const Prod=lazy(()=>import('../components/Prod'));
+const HandpickedProd =lazy(()=>import("../components/HandpickedProd"));
 
 const Product = () => {
     const [prod, setProd] = useState({});
@@ -32,9 +32,11 @@ const Product = () => {
     }, [s_no, category])
     return (
         <div>
-            <Navbar />
-            {category === "handpicked" ? <HandpickedProd prod={prod} imgs={prod.imgs} /> : <Prod prod={prod} />}
-            <Footer />
+            <Suspense>
+                <Navbar />
+                {category === "handpicked" ? <HandpickedProd prod={prod} imgs={prod.imgs} /> : <Prod prod={prod} />}
+                <Footer />
+            </Suspense>
         </div>
     )
 }

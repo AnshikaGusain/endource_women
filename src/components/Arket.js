@@ -1,12 +1,13 @@
-import React from 'react'
-import ArketCard from './ArketCard';
+import React,{lazy,Suspense} from 'react';
 import {data} from './Arket_images'
-import Footer from './Footer';
-import Navbar from './Navbar';
+const ArketCard=lazy(()=>import('./ArketCard'));
+const Footer=lazy(()=>import('../components/Footer'));
+const Navbar=lazy(()=>import('../components/Navbar'));
 
 export default function Arket() {
 return (
   <div>
+    <Suspense>
     <Navbar/>
     {data.map((val,i)=>{
       return(
@@ -17,6 +18,7 @@ return (
     ); 
     })}
     <Footer/>
+    </Suspense>
   </div>
 )
 }

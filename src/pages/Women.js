@@ -1,17 +1,22 @@
-import Category from "../components/Category"
-import Footer from "../components/Footer"
-import Handpicked from "../components/Handpicked"
-import Navbar from "../components/Navbar"
-import Slider from "../components/Slider"
+import { React,lazy,Suspense } from 'react';
+
+const Category =lazy(()=>import('../components/Category'));
+const Footer=lazy(()=>import('../components/Footer'));
+const Navbar=lazy(()=>import('../components/Navbar'));
+const Handpicked =lazy(()=>import('../components/Handpicked'));
+const Slider =lazy(()=>import('../components/Slider'));
+
 
 const Women=()=>{
     return(
         <div>
-            <Navbar/>
-            <Slider/>
-            <Category type="women"/>
-            <Handpicked/>
-            <Footer/>
+            <Suspense>
+                <Navbar/>
+                <Slider/>
+                <Category type="women"/>
+                <Handpicked/>
+                <Footer/>
+            </Suspense>
         </div>
     )
 }

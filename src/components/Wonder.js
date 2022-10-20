@@ -1,12 +1,13 @@
-import React from "react";
-import Navbar from "./Navbar"
-import Footer from "./Footer";
-import WonderCard from "./WonderCard";
+import React,{lazy,Suspense} from "react";
 import { data } from "./wonderData";
+const Navbar = lazy(()=>import("./Navbar"));
+const Footer = lazy(()=>import("./Footer"));
+const WonderCard = lazy(()=>import("./WonderCard"));
 
 export default function Wonder() {
   return (
     <div>
+      <Suspense>
       <Navbar />
       <div className="container-fluid d-flex flex-wrap my-4" style={{ width: "50%", justifyContent:"center" }}>
         <h1 className="flexParts">Girl Wonder</h1>
@@ -20,21 +21,22 @@ export default function Wonder() {
       <div
         className="d-inline-flex text-center"
         style={{ flexWrap: "wrap", justifyContent: "center" }}
-      >
+        >
         {data.map((val, i) => {
           return (
             <WonderCard
-              key={i}
-              img={val.img}
-              brand={val.brand}
-              title={val.title}
-              price={val.price}
+            key={i}
+            img={val.img}
+            brand={val.brand}
+            title={val.title}
+            price={val.price}
             />
-          );
+            );
         })}
         ;
       </div>
       <Footer />
+    </Suspense>
     </div>
   );
 }

@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Icon from "../assets/logo.jsx";
-
 
 const Navbar = () => {
     return (

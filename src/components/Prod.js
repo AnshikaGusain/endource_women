@@ -39,15 +39,6 @@ const Prod = ({ prod }) => {
                 <div className="text-center align-self-center">
                     <div className="title p-1 m-4 text-decoration-underline"><h1>{prod.title}</h1></div>
                     <div className="brand p-1 m-2 text-center"><h3>Brand: {prod.brand}</h3></div>
-                    {/* <div className="ProductPrice">
-                        <span className="price p-1 m-2 text-center" >Price: {prod.price}</span>
-                            {(prod.previousprice !== undefined) ?
-                                <span className="prevPrice text-muted text-decoration-line-through">{prod.previousprice}</span>
-                                :
-                                <span></span>}
-                        
-                    </div>
-                    <button className="btn btn-outline-dark my-4"><h4>Buy</h4></button> */}
                 </div>
             </div>
             <h2 className="text-decoration-underline m-4">Description</h2>

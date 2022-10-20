@@ -1,59 +1,51 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
-import Item from "../components/Item";
-import { useState } from "react";
-// import Filter from "../components/Filters";
-
+import { React,lazy,Suspense,useState,useEffect } from "react";
+const Footer=lazy(()=>import('../components/Footer'));
+const Navbar=lazy(()=>import('../components/Navbar'));
+const Item = lazy(() => import('../components/Item'));
 
 const PickedList = () => {
     const location = useLocation();
     const page = location.pathname.split("/")[1];
     const category = location.pathname.split("/")[2].toString().toLowerCase().replaceAll("%20", " ");
-    // const [search,setSearch]=useState("");
     const [data, setData] = useState([]);
-    const getData = async (category) => {
-        const data = await (fetch(`https://endource-backend.herokuapp.com/${page}`, {
-            method: 'Post',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                category: category
+    useEffect(()=>{
+        const getData = async (category) => {
+            const data = await (fetch(`https://endource-backend.herokuapp.com/${page}`, {
+                method: 'Post',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    category: category
+                })
+            }))
+            const result = data.json();
+            result.then(value => {
+                setData(value);
             })
-        }))
-        const result = data.json();
-        result.then(value => {
-            setData(value);
-        })
-
-    }
-    getData(category);
-
-    // const onSearch=(event)=>{
-    //     setSearch(event.target.value)
-    // }
-    // const brand=[...new Set(data.map(item=>item.brand))];
-    // const filtered=data.filter(item=>{
-    //   return (item.title.toLowerCase().includes(search.toLowerCase()) || item.brand.toLowerCase().includes(search.toLowerCase()));
-    // });
-
-
+    
+        }
+        getData(category);
+    },[category,page]);
+    
     return (
         <div>
+            <Suspense>
             <Navbar />
             {(data.length === 0)
                 ?
                 <div><h1 className="mt-2 mb-2 p-4  fw-bold">Loading...</h1></div>
                 :
                 <div>
-
-                    {/* <Filter brand={brand} search={onSearch}/> */}
                     <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
+                    <Suspense fallback={<div>Loading...</div>}>
                         {data.map((item, index) => {
                             return <Item s_no={item.s_no} img={item.img} title={item.title} brand={item.brand} brandLink={item.brandLink} desc={item.desc} price={item.price} titleLink={item.titleLink} key={index} previousPrice={item.previousprice} category="handpicked" />
                         })}
+                    </Suspense>
                     </div>
                 </div>}
             <Footer />
+            </Suspense>
         </div>
     )
 }

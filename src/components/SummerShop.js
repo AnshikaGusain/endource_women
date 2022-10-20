@@ -1,12 +1,13 @@
-import React from "react";
+import React,{lazy,Suspense} from "react";
 import { Link } from "react-router-dom";
-import ShopCard from "./ShopCard";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+const ShopCard =lazy(()=>import("./ShopCard"));
+const Navbar =lazy(()=>import("././Navbar"));
+const Footer =lazy(()=>import("./Footer"));
 
 export default function SummerShop() {
   return (
     <>
+    <Suspense>
     <Navbar/>
     <Link to="/Women">
       <div className="container-fluid d-flex m-3">
@@ -36,39 +37,6 @@ export default function SummerShop() {
         />
       </Link>
 
-{/* <div className="container">
-        <img className="img-fluid"
-          src="https://images.prismic.io/endource/2b0c7db4-c21d-4958-9ab5-167976fcdf3b_art_pia_riverola.jpg?auto=compress,format"
-          alt="Not available"
-        />
-      </div>
-      <div className="container">
-        <img className="img-fluid"
-          src="https://images.prismic.io/endource/e7856752-a747-42ea-bce4-0878b9469a15_Hanpicked_sandals.jpg?auto=compress,format"
-          alt="Not available"
-        />
-      </div> */}
-
-      {/* <ShopCard
-        img1="https://images.prismic.io/endource/58ec65ff-4d4e-4449-9f16-cd1a6001a5a5_maje.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title1="Maje"
-        img2="https://images.prismic.io/endource/eee562d8-5352-4d7b-a9c9-e621bae76cfc_karen_millen.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title2="Karen Millen"
-        img3="https://images.prismic.io/endource/f03af41b-4370-4c45-961b-4addc2ac1695_cos.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
-        title3="COS"
-        link="products"
-        category="accessories"
-      />
-      <ShopCard
-        img1="https://images.prismic.io/endource/d6bd7454-5c6d-49e2-b8eb-dd7f821990d7_byfar.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title1="By Far"
-        img2="https://images.prismic.io/endource/710bfb36-71d1-44cc-8197-4d1ed4dc52cd_russelb.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title2="Rusell and Bromley"
-        img3="https://images.prismic.io/endource/fb46218b-2a31-40dc-9c86-e4138aef6a87_stories.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
-        title3="& Other Stories"
-        link="products"
-        category="accessories"
-      /> */}
       <Link to="/products/dresses">
       <div className="container">
         <img className="img-fluid"
@@ -110,41 +78,6 @@ export default function SummerShop() {
         />
       </Link>
 
-{/* <div className="container">
-        <img className="img-fluid"
-          src="https://images.prismic.io/endource/8a964332-5833-48c6-be1f-a30e03744ec6_shell_jewellery_D.jpg?auto=compress,format"
-          alt="Not available"
-        />
-      </div>
-      <ShopCard
-        img1="https://images.prismic.io/endource/17823961-9c73-4f91-a039-1679fc1838a8_marant.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title1="Isabel Marant"
-        img2="https://images.prismic.io/endource/7628268d-d9c8-4229-8a71-2c065763bc45_mango.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title2="Mango"
-        img3="https://images.prismic.io/endource/c15ba032-b6fa-4444-8dbb-7b398b543d79_marni.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"    
-        title3="Marni"
-        link="products"
-        category="accessories"
-      /> */}
-
-{/* <div className="container">
-        <img className="img-fluid"
-          src="https://images.prismic.io/endource/38d33f97-976a-47b7-82fb-9efbdd76f05e_Woven_bags_D.jpg?auto=compress,format"
-          alt="Not available"
-        />
-      </div> */}
-
-      {/* <ShopCard
-        img1="https://images.prismic.io/endource/28fc14a5-3b9e-4912-9f26-4fb79ffda690_bag1.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title1="Arket"
-        img2="https://images.prismic.io/endource/fc16b2e1-54dc-415b-a6b4-00169820f8eb_bag2.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title2="Staud"
-        img3="https://images.prismic.io/endource/ff433f19-589a-463a-a5fd-0f70794caaa9_bag3.jpg?auto=compress,format&rect=0,0,400,400&w=400&h=400"
-        title3="Mango"
-        link="products"
-        category="accessories"
-      /> */}
-
   <Link to="/handpicked/mini dresses">
 <div className="container">
         <img className="img-fluid"
@@ -169,7 +102,7 @@ export default function SummerShop() {
         title3="Mango"
         link="handpicked"
         category="mini dresses"
-      />
+        />
   </Link>
       <Link to="/handpicked/mini dresses">
       <ShopCard
@@ -183,14 +116,6 @@ export default function SummerShop() {
         category="mini dresses"
         />
       </Link>
-
-{/* <div className="container">
-        <img className="img-fluid"
-          src="https://images.prismic.io/endource/5bf86950-accc-4bee-aa8a-0af8454b58f0_BON2.jpg?auto=compress,format"
-          alt="Not available"
-        />
-      </div> */}
-
       <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/48b153c6-032a-4d7c-8fd9-2ef7d8b75ccd_swimwear.jpg?auto=compress,format"
@@ -221,32 +146,8 @@ export default function SummerShop() {
         link="products"
         />
       </Link>
-      {/* <div className="container">
-        <img className="img-fluid"
-          src="https://images.prismic.io/endource/8f3454fa-75f6-4ec5-8f5d-1069e6492f93_BON.jpg?auto=compress,format"
-          alt="Not available"
-        />
-      </div> */}
-
-      {/* <div className="container my-3">
-  <div className="row">
-    <div className="col">
-      <img className="img-fluid" src="https://images.prismic.io/endource/2f15acdf-f7cc-48ec-bd1b-daa7bab5b9aa_TaxonomiesB.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt="Not available"/>
-    </div>
-    <div className="col">
-      <img className="img-fluid" src="https://images.prismic.io/endource/282c3a8b-a914-41b3-8171-c89e8a164196_Taxonomies_hats.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
-    </div>
-  </div>
-  <div className="row">
-    <div className="col">
-    <img className="img-fluid" src="https://images.prismic.io/endource/f809d9a5-984e-455c-aaee-d3d503c1c9b2_TaxonomiesB3.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
-    </div>
-    <div className="col">
-    <img className="img-fluid" src="https://images.prismic.io/endource/6cd37b39-3a11-4b93-a8fa-de1254589efc_TaxonomiesB4.jpg?auto=compress,format&rect=0,0,1146,1459&w=600&h=764" alt ="Not available"/>
-    </div>
-  </div>
-</div> */}
-<Footer/>
+      <Footer/>
+    </Suspense>
     </>
   );
 }
