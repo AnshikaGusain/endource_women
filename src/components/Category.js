@@ -1,5 +1,6 @@
-import React, { useState, useEffect,lazy, Suspense } from "react";
-const Card =lazy(()=>import("./Card"));
+import React, { useState, useEffect } from "react";
+import Card from "./Card";
+
 
 const Category =({type})=> {
     const [category,setCategory]=useState([]);
@@ -30,7 +31,9 @@ const Category =({type})=> {
                 <div className="mt-2 mb-2 p-4 category">
                     <div className="categoryCard">
                         {category.map((i, index) => {
-                            return  <Suspense><Card title={i.title} img={i.img} key={index} link="products"/></Suspense>                            
+                            return  <Card title={i.title} img={i.img} key={index} link="products"/>
+                            
+                            
                         })}
                     </div>
                 </div>

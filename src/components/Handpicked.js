@@ -1,5 +1,5 @@
-import React,{Component,lazy,Suspense} from "react";
-const Card =lazy(()=>import("./Card"));
+import React,{Component} from "react";
+import Card from "./Card";
 
 const data=[
     {title:"Trousers",
@@ -36,9 +36,7 @@ class Handpicked extends Component {
                 <div><h4>Handpicked Collection</h4></div>
                 <div style={{ margin: "10px", padding: "10px", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
                     {this.state.handpick.map((i, index) => {
-                        return <Suspense>
-                            <Card title={i.title} img={i.img} key={index} link="handpicked"/>
-                            </Suspense>
+                        return <Card title={i.title} img={i.img} key={index} link="handpicked"/>
                     })}
                 </div>
             </div>

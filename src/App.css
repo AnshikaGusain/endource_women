@@ -179,23 +179,14 @@ a,a:hover{
   font-size:1.5rem;
 }
 
-
-.lazyImg,img{
+img{
   transition: transform .5s ease;
 }
-.lazyImg:hover,img:hover{
-  transform:scale(1.05);
+
+img:hover{
+  transform:scale(1.03);
 }
 
 .item_card img{
   height:44vw;
-}
-
-.item_card img{
-  transition: transform .5s ease;
-}
-
-.lazy-load-image-background.blur.lazy-load-image-loaded > img {
-  opacity: 1;
-  transition: opacity,transform .3s ease;
 }

@@ -1,13 +1,12 @@
-import React,{lazy,Suspense} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-const ShopCard =lazy(()=>import("./ShopCard"));
-const Navbar =lazy(()=>import("././Navbar"));
-const Footer =lazy(()=>import("./Footer"));
+import ShopCard from "./ShopCard";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function SummerShop() {
   return (
     <>
-    <Suspense>
     <Navbar/>
     <Link to="/Women">
       <div className="container-fluid d-flex m-3">
@@ -78,6 +77,7 @@ export default function SummerShop() {
         />
       </Link>
 
+
   <Link to="/handpicked/mini dresses">
 <div className="container">
         <img className="img-fluid"
@@ -102,7 +102,7 @@ export default function SummerShop() {
         title3="Mango"
         link="handpicked"
         category="mini dresses"
-        />
+      />
   </Link>
       <Link to="/handpicked/mini dresses">
       <ShopCard
@@ -116,6 +116,8 @@ export default function SummerShop() {
         category="mini dresses"
         />
       </Link>
+
+
       <div className="container">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/48b153c6-032a-4d7c-8fd9-2ef7d8b75ccd_swimwear.jpg?auto=compress,format"
@@ -146,8 +148,8 @@ export default function SummerShop() {
         link="products"
         />
       </Link>
-      <Footer/>
-    </Suspense>
+      
+<Footer/>
     </>
   );
 }

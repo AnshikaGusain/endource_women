@@ -1,13 +1,10 @@
-import { React,lazy,Suspense } from 'react';
-const SummerShop =lazy(()=>import('../components/SummerShop'));
-function Landing() {
+import React from "react";
+import SummerShop from "../components/SummerShop";
+
+export default function Landing() {
   return (
     <div>
-      <Suspense>
-        <SummerShop/>
-      </Suspense>
+      <SummerShop/>    
     </div>
   );
 }
-
-export default Landing;

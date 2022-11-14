@@ -1,6 +1,6 @@
 import React from "react";
 
-const WonderCard=(props)=>{
+export default function WonderCard(props) {
   return (
       <div className="card m-4" style={{width: "18rem"} }>
         <img src={props.img} className="card-img-top" alt="..." />
@@ -15,5 +15,3 @@ const WonderCard=(props)=>{
       </div>
   );
 }
-
-export default WonderCard;

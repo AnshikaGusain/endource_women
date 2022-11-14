@@ -1,16 +1,19 @@
-import React, { Component,lazy,Suspense } from "react";
+import React, { Component } from "react";
+
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Women from './pages/Women';
+import Kids from './pages/Kids';
+import Home from './pages/Home';
+import ProductList from './pages/ProductList';
+import Product from "./pages/Product";
+import PickedList from "./pages/PickedList";
+import SummerShop from "./components/SummerShop"
+import Arket from "./components/Arket"
+import Wonder from "./components/Wonder";
+import Landing from "./pages/Landing";
 import './App.css';
-const Women = lazy(()=>import('./pages/Women'));
-const Kids = lazy(()=>import('./pages/Kids'));
-const Home = lazy(()=>import('./pages/Home'));
-const ProductList = lazy(()=>import('./pages/ProductList'));
-const Product = lazy(()=>import("./pages/Product"));
-const PickedList = lazy(()=>import("./pages/PickedList"));
-const SummerShop = lazy(()=>import("./components/SummerShop"));
-const Arket = lazy(()=>import("./components/Arket"));
-const Wonder = lazy(()=>import("./components/Wonder"));
-const Landing = lazy(()=>import("./pages/Landing"));
+
+
 
 class App extends Component {
   
@@ -18,8 +21,7 @@ class App extends Component {
     
     return (
       <div className="App" id="top">
-        <Suspense>
-
+        
         <Router>
           <Routes>
           <Route exact path="/" element={<Landing/>}/>
@@ -32,10 +34,10 @@ class App extends Component {
             <Route path="/SummerShop" element={<SummerShop/>}/>
             <Route path="/Arket" element={<Arket/>}/>
             <Route path="/Wonder" element={<Wonder/>}/>
+
           </Routes>
         </Router>
         
-        </Suspense>
       </div>
     );
   }

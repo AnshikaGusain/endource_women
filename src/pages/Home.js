@@ -1,16 +1,13 @@
-import { React,lazy,Suspense } from 'react';
-const Category =lazy(()=>import('../components/Category'));
-const Footer=lazy(()=>import('../components/Footer'));
-const Navbar=lazy(()=>import('../components/Navbar'));
+import Navbar from "../components/Navbar";
+import Category from "../components/Category";
+import Footer from "../components/Footer";
 
 const Home=()=>{
     return (
         <div>
-            <Suspense>
             <Navbar/>
             <Category type="home"/>
             <Footer/>
-            </Suspense>
         </div>
     )
 }
