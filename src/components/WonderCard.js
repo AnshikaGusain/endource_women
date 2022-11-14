@@ -10,7 +10,7 @@ export default function WonderCard(props) {
         </div >
         <ul className="list-group list-group-flush">
           <li className="list-group-item">{props.price}</li>
-          {/* <button type="button" className="btn btn-info">Buy Now</button> */}
+          
         </ul>        
       </div>
   );
