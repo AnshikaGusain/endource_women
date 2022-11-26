@@ -5,7 +5,7 @@ import Card from "./Card";
 const Category =({type})=> {
     const [category,setCategory]=useState([]);
     const getData=(type)=>{
-        fetch("https://endource-backend.herokuapp.com/category", {
+        fetch("https://icube-backend.onrender.com/category", {
             method: 'Post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

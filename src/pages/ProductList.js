@@ -12,7 +12,7 @@ const ProductList=()=>{
     
     const [data,setData]=useState([]);
     const getData=async (category)=>{
-        const data=await (fetch(`https://endource-backend.herokuapp.com/data/${category}`))
+        const data=await (fetch(`https://icube-backend.onrender.com/data/${category}`))
         const result=data.json();
         result.then(value=>{
             setData(value);

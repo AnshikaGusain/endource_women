@@ -12,7 +12,7 @@ const Product = () => {
     const s_no = location.pathname.split("/")[3].toString().replaceAll("%20", " ");
     useEffect(() => {
         const getProduct = async () => {
-            const product = await fetch("https://endource-backend.herokuapp.com/link", {
+            const product = await fetch("https://icube-backend.onrender.com/link", {
                 method: 'Post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

@@ -13,7 +13,7 @@ const PickedList = () => {
    
     const [data, setData] = useState([]);
     const getData = async (category) => {
-        const data = await (fetch(`https://endource-backend.herokuapp.com/${page}`, {
+        const data = await (fetch(`https://icube-backend.onrender.com/${page}`, {
             method: 'Post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
