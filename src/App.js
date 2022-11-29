@@ -13,7 +13,7 @@ import Wonder from "./components/Wonder";
 import Landing from "./pages/Landing";
 import './App.css';
 
-// hello 
+
 
 class App extends Component {
   
