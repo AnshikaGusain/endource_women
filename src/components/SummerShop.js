@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ShopCard from "./ShopCard";
+// import { Link } from "react-router-dom";
+// import ShopCard from "./ShopCard";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 export default function SummerShop() {
   return (
