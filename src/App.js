@@ -25,7 +25,7 @@ class App extends Component {
         <Router>
           <Routes>
           <Route exact path="/" element={<Landing/>}/>
-            <Route exact path="/Women" element={<Women/>}/>
+            {/* <Route exact path="/Women" element={<Women/>}/>
             <Route exact path="/Kids" element={<Kids/>}/>
             <Route exact path="/Home" element={<Home/>}/>
             <Route path="/products/:item" element={<ProductList/>}/>
@@ -33,7 +33,7 @@ class App extends Component {
             <Route path="/handpicked/:category" element={<PickedList/>}/>
             <Route path="/SummerShop" element={<SummerShop/>}/>
             <Route path="/Arket" element={<Arket/>}/>
-            <Route path="/Wonder" element={<Wonder/>}/>
+            <Route path="/Wonder" element={<Wonder/>}/> */}
 
           </Routes>
         </Router>

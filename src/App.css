@@ -20,7 +20,7 @@ body{
   font-size: 1.2em;
 }
 .logo img{
-  height: 2rem;
+  /* height: 2rem; */
   width: 5rem;
   margin-right: 0.5rem;
 }

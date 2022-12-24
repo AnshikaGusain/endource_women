@@ -8,7 +8,7 @@ export default function SummerShop() {
   return (
     <>
     <Navbar/>
-    <Link to="/Women">
+    {/* <Link to="/Women">
       <div className="container-fluid d-flex m-3">
         <img className="img-fluid"
           src="https://images.prismic.io/endource/e79e9b09-a003-406d-85a2-f3079e4c73e6_Title.jpg?auto=compress,format"
@@ -149,7 +149,7 @@ export default function SummerShop() {
         />
       </Link>
       
-<Footer/>
+<Footer/> */}
     </>
   );
 }

@@ -9,11 +9,11 @@ const Navbar = () => {
                     <div className="my-2">
                         <Link to='/'>
                             <div className="logo">
-                                    <img src="https://i.imgur.com/D39K5wu.jpeg"  alt="" />
+                                    <img src="https://i.imgur.com/077scWh.jpg"  alt="" />
                             </div>
                         </Link>
                     </div>
-                    <div className="container-fluid">
+                    {/* <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
                 </nav>
                 </div>
     );
